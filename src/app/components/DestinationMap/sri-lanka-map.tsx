@@ -1,12 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { categories } from "../../data/categories";
 import { CategoryButton } from "./category-button";
 import { LocationMarker } from "./location-marker";
-import { cn } from "../../lib/utils";
 import slmap from "../../../../public/Sri-lankan-map.png";
 
 export function SriLankaMap() {

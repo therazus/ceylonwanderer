@@ -1,5 +1,5 @@
 import React from "react";
-import { Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 
 import batchlogo from "../../../public/ayu-in-the-wild-sri-lanka-boutique-2.png";
 

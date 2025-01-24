@@ -17,15 +17,15 @@ export default function AboutUs() {
               Luxury travel reimagined. Emotionally engaging luxury experiential
               itineraries in Sri Lanka tailor made with meticulous attention to
               detail by an owner-managed, women-led, full service boutique
-              travel company based in Sri Lanka. To us, it's all about
+              travel company based in Sri Lanka. To us, it&apos;s all about
               connections - to explore the legacy of a centuries old culture, to
               the incredible endemism, wildlife and biodiversity on private
               safaris and guided walks, to rural people and their traditions in
-              one of the world's most fascinating islands famously known as
+              one of the world&apos;s most fascinating islands famously known as
               Ceylon. Enjoy luxury in the best accommodation spiced by our
               adventures with local authenticity that supports community and
               conservation. Curious about our story and our own network of
-              storytellers? We'd love to hear from you.
+              storytellers? We&apos;d love to hear from you.
             </p>
             <p className="text-lg font-semibold text-gray-800 italic">
               - Chamintha Jayasinghe, Co-Founder
