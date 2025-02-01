@@ -1,0 +1,26 @@
+{
+  "about": {
+    "title": "Unsere Geschichte seit 2012",
+    "description": "Luxusreisen neu definiert...",
+    "impact": "EINFLUSS",
+    "impact_description": "Ayu in the Wild ist ein Reisepartner von The Long Run...",
+    "learn_more": "Mehr erfahren"
+  },
+
+  
+  "navbar": {
+    "home": "STARTSEITE",
+    "about_us": "ÜBER UNS",
+    "destinations": "REISEZIELE",
+    "contact": "KONTAKT",
+    "search_placeholder": "Suchen...",
+    "translate" : "Übersetzen"
+  },
+
+  "hero": {
+    "title_line1": "Entdecke die ungezähmte Schönheit von",
+    "title_line2": "Sri Lanka",
+    "description": "Wo jeder Moment zu einer unvergesslichen Erinnerung wird."
+  }
+
+}

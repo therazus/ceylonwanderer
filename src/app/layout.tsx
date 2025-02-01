@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Josefin_Sans, Caveat } from "next/font/google";
+import { LanguageProvider } from "./context/language-context";
 
 import "./globals.css";
 
@@ -31,7 +32,7 @@ export default function RootLayout({
         className={`${josefinSans.variable} ${caveatFont.variable} antialiased`}
       >
         {/* Main content */}
-        {children}
+        <LanguageProvider>{children}</LanguageProvider>
       </body>
     </html>
   );
