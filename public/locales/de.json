@@ -1,10 +1,20 @@
 {
+
   "about": {
-    "title": "Unsere Geschichte seit 2012",
-    "description": "Luxusreisen neu definiert...",
-    "impact": "EINFLUSS",
-    "impact_description": "Ayu in the Wild ist ein Reisepartner von The Long Run...",
-    "learn_more": "Mehr erfahren"
+    "title": "Unsere Geschichte schreiben, Kapitel für Kapitel, seit 2024",
+    "description": "Sri Lanka ist ein verborgenes Juwel im Indischen Ozean, reich an beeindruckenden Naturschätzen und einer vielfältigen Kultur. Unser Unternehmen fördert Sri Lanka auf der globalen Tourismusplattform nicht nur als typisches Strandurlaubsziel, sondern hebt auch die bisher unentdeckten Aspekte wie Kultur, Natur und Wellness hervor.",
+    "impact": "VISION",
+    "impact_description": "Unsere Vision ist es, ein besseres Sri Lanka zu schaffen, und wir wählen den Weg des Tourismus, um dies zu erreichen. Sri Lanka ist wie unsere Mutter, und alles, was wir unseren Kunden bieten, ist tief mit dem Wohl unseres geliebten Landes verbunden. Wenn man dies versteht, gibt es keinen Zweifel an der Qualität und Wirkung dessen, was wir bieten. Ihre Erfahrung mit uns ist eine Erfahrung, die Sri Lanka selbst nährt und stärkt.",
+    "learn_more": "Mehr erfahren",
+
+    "icons" : {
+      "travel" : "Reisen",
+      "explore" : "Erkunden",
+      "experience" : "Erfahren",
+      "adventure" : "Abenteuer",
+      "nature" : "Natur",
+      "discover" : "Entdecken"
+    }
   },
 
   
@@ -13,14 +23,82 @@
     "about_us": "ÜBER UNS",
     "destinations": "REISEZIELE",
     "contact": "KONTAKT",
-    "search_placeholder": "Suchen...",
+    "search": "Suchen...",
     "translate" : "Übersetzen"
   },
 
   "hero": {
-    "title_line1": "Entdecke die ungezähmte Schönheit von",
+    "title_line1": "Entdecke die ungezähmte Schönheit",
     "title_line2": "Sri Lanka",
     "description": "Wo jeder Moment zu einer unvergesslichen Erinnerung wird."
+  },
+
+
+  "destination": {
+    "title1":"Entdecken Sie die Magischen",
+    "title2":"Reiseziele",
+    "description":"Erforschen Sie die Wunder Sri Lankas mit unserer sorgfältig ausgewählten Liste der besten Reiseziele. Von unberührten Stränden bis hin zu antiken Tempeln – begeben Sie sich auf eine unvergessliche Reise durch dieses tropische Paradies",
+    "explore-now":"Jetzt erkunden",
+
+    "buttons" : {
+      "popular-beaches" : "Beliebte Strände",
+      "wildlife-nature" : "Tierwelt & Natur",
+      "adventure" : "Abenteuer",
+      "history-culture" : "Geschichte & Kultur",
+      "lesser-travelled" : "Weniger bereiste Orte",
+      "gastronomy" : "Gastronomie"
+    }
+
+  },
+
+  "sustainability": {
+    "title1":"Philosophie",
+    "title2":"Der Nachhaltigkeit",
+    "description":"Schließen Sie sich uns an, um einen positiven Einfluss im Bereich des freiwilligen und Ökotourismus in Sri Lanka zu schaffen. Gemeinsam können wir einen Unterschied machen und neue Möglichkeiten für alle Völker schaffen.",
+    "read-more":"MEHR LESEN",
+
+    "education" : {
+      "title" : "Bildung",
+      "description" : "Gemeinschaften durch Wissen und Lernmöglichkeiten stärken."
+      },
+
+      "plant" : {
+        "title" : "Einen Baum pflanzen",
+        "description" : "Beitrag zur Aufforstung und zum Umweltschutz."
+        },
+
+        "animal" : {
+          "title" : "Tierrettung",
+          "description" : "Unterstützung von Tierrettungs- und Schutzprogrammen."
+      }
+
+
+
+  },
+
+  "footer":{
+    "connect" : {
+      "title" : "Verbinden",
+      "contact" : "Kontakt"
+    },
+
+    "find-out-more" : {
+      "title" : "Mehr erfahren",
+      "about": "Über uns",
+      "conscious-travel" : "Bewusstes Reisen",
+      "trade-portal" : "Handelsportal"
+  },
+
+  "advocacy" : {
+    "title" : "Fürsprechen",
+    "description" : "Zusammenarbeit für nachhaltigen Tourismus"
+  },
+
+  "legals" : {
+    "title" : "Rechtliches",
+   "cookies-privacypolicy" : "Cookies & Datenschutz",
+   "all-rights-reserved" : "Alle Rechte vorbehalten"
   }
+} 
 
 }

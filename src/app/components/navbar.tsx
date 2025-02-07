@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, Search, Languages, ChevronDown } from "lucide-react";
@@ -10,7 +11,6 @@ import { Input } from "../components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "../components/ui/sheet";
 
 import { useLanguage } from "../context/language-context";
-import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const { language, setLanguage } = useLanguage();
@@ -60,7 +60,7 @@ export default function Navbar() {
                   <div className="flex items-center border-b border-gray-300">
                     <Input
                       type="search"
-                      placeholder={t("navbar.search_placeholder")}
+                      placeholder={t("navbar.search") as string}
                       className="w-full text-sm text-base border-none focus:outline-none focus:ring-0"
                       style={{
                         outline: "none",

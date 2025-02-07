@@ -1,8 +1,8 @@
 "use client";
+import { useTranslation } from "react-i18next";
 
 import { Button } from "../components/ui/button";
 import { Plane, Globe, Heart, Map, Compass, Mountain } from "lucide-react";
-import { useTranslation } from "react-i18next";
 
 export default function AboutUs() {
   const { t } = useTranslation();
@@ -38,12 +38,12 @@ export default function AboutUs() {
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {[
-            { icon: Plane, label: t("about.travel") },
-            { icon: Globe, label: t("about.explore") },
-            { icon: Heart, label: t("about.experience") },
-            { icon: Map, label: t("about.adventure") },
-            { icon: Compass, label: t("about.discover") },
-            { icon: Mountain, label: t("about.nature") },
+            { icon: Plane, label: t("about.icons.travel") },
+            { icon: Globe, label: t("about.icons.explore") },
+            { icon: Heart, label: t("about.icons.experience") },
+            { icon: Map, label: t("about.icons.adventure") },
+            { icon: Compass, label: t("about.icons.discover") },
+            { icon: Mountain, label: t("about.icons.nature") },
           ].map((item, index) => (
             <div
               key={index}

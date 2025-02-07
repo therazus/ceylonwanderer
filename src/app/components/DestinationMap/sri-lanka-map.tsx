@@ -1,14 +1,18 @@
 "use client";
 
+import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { categories } from "../../data/categories";
+import { useCategories } from "../../data/categories";
 import { CategoryButton } from "./category-button";
 import { LocationMarker } from "./location-marker";
 import slmap from "../../../../public/Sri-lankan-map.png";
 
 export function SriLankaMap() {
+  const { t } = useTranslation();
+  const categories = useCategories();
+
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
 
   return (
@@ -23,20 +27,20 @@ export function SriLankaMap() {
               className="text-left space-y-4 sm:space-y-6"
             >
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-muted">
-                Explore the Magical
-                <span className="block text-tan_primary">Destinations</span>
+                {t("destination.title1")}
+                <span className="block text-tan_primary">
+                  {t("destination.title2")}
+                </span>
               </h1>
               <p className="text-base sm:text-lg leading-relaxed">
-                Discover the wonders of Sri Lanka with our curated list of top
-                destinations. From pristine beaches to ancient temples, embark
-                on an unforgettable journey through this tropical paradise.
+                {t("destination.description")}
               </p>
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 className="inline-flex items-center gap-2 text-base sm:text-lg font-medium px-4 sm:px-6 py-2 sm:py-3 bg-primary text-gray-100 rounded-lg hover:bg-primary/90 transition-colors"
               >
-                Explore Now
+                {t("destination.explore-now")}
               </motion.button>
             </motion.div>
 

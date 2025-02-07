@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Leaf, GraduationCap, Heart, ArrowRight } from "lucide-react";
 import education from "../../../public/education.jpg";
 import plant from "../../../public/plant.jpg";
@@ -6,6 +9,8 @@ import animal from "../../../public/rescue.jpg";
 import sustainableimage from "../../../public/sustainable.png";
 
 const SustainabilityActivities = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="bg-gradient-to-b from-primary to-tan_primary text-white py-20">
       {/* Philosophy Header */}
@@ -24,16 +29,18 @@ const SustainabilityActivities = () => {
           {/* Right Content */}
           <div className="w-full md:w-1/2">
             <h2 className="text-7xl font-serif italic  font-caveat text-muted_primary">
-              Philosophy
+              {t("sustainability.title1")}
             </h2>
-            <h3 className="text-4xl font-bold mb-4">OF SUSTAINABILITY</h3>
+
+            {/* make following uppercrease */}
+            <h3 className="text-4xl font-bold  mb-4 uppercase">
+              {t("sustainability.title2")}
+            </h3>
             <p className="text-gray-200 mb-8">
-              Join us on our effort to create positive impact in volunteer and
-              eco-tourism across Sri Lanka. Together we can make a difference
-              and create new possibilities for all races.
+              {t("sustainability.description")}
             </p>
             <button className="border border-white px-8 py-3 hover:bg-white hover:text-tan_primary transition-all">
-              READ MORE
+              {t("sustainability.read-more")}
             </button>
           </div>
         </div>
@@ -54,10 +61,12 @@ const SustainabilityActivities = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-70 transition-all flex items-center justify-center">
               <div className="text-center p-6">
                 <GraduationCap className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">Education</h3>
+                <h3 className="text-2xl font-bold mb-2">
+                  {" "}
+                  {t("sustainability.education.title")}{" "}
+                </h3>
                 <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity mb-4">
-                  Empowering communities through knowledge and learning
-                  opportunities
+                  {t("sustainability.education.description")}
                 </p>
                 <div className="flex justify-center">
                   <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-green-600">
@@ -80,9 +89,11 @@ const SustainabilityActivities = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-70 transition-all flex items-center justify-center">
               <div className="text-center p-6">
                 <Leaf className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">Plant a Tree</h3>
+                <h3 className="text-2xl font-bold mb-2">
+                  {t("sustainability.plant.title")}
+                </h3>
                 <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity mb-4">
-                  Contributing to reforestation and environmental conservation
+                  {t("sustainability.plant.description")}
                 </p>
                 <div className="flex justify-center">
                   <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-green-600">
@@ -105,9 +116,11 @@ const SustainabilityActivities = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-70 transition-all flex items-center justify-center">
               <div className="text-center p-6">
                 <Heart className="w-12 h-12 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">Rescue Animal</h3>
+                <h3 className="text-2xl font-bold mb-2">
+                  {t("sustainability.animal.title")}
+                </h3>
                 <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity mb-4">
-                  Protecting and caring for wildlife in need
+                  {t("sustainability.animal.description")}
                 </p>
                 <div className="flex justify-center">
                   <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-green-600">

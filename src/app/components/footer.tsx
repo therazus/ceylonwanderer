@@ -1,23 +1,30 @@
+"use client";
+
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { Instagram, Mail, Phone } from "lucide-react";
 
 import batchlogo from "../../../public/ayu-in-the-wild-sri-lanka-boutique-2.png";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-muted text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Connect Section */}
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-6">CONNECT</h3>
+            <h3 className="text-xl font-bold mb-6 uppercase">
+              {t("footer.connect.title")}
+            </h3>
             <div className="space-y-4">
               <a
                 href="mailto:info@ayuinthewild.com"
                 className="flex items-center justify-center gap-2 hover:text-gray-300 transition-colors"
               >
                 <Mail size={18} />
-                info@ayuinthewild.com
+                ceylonwanderer@gmail.com
               </a>
               <a
                 href="tel:+94772481100"
@@ -27,45 +34,43 @@ const Footer = () => {
                 +94 77 248 1100
               </a>
               <button className="border border-white px-6 py-2 hover:bg-white hover:text-gray-900 transition-all">
-                contact
+                {t("footer.connect.contact")}
               </button>
             </div>
           </div>
 
           {/* Find Out More Section */}
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-6">FIND OUT MORE</h3>
+            <h3 className="text-xl font-bold mb-6 uppercase">
+              {t("footer.find-out-more.title")}
+            </h3>
             <div className="space-y-4">
               <a
                 href="/about"
                 className="block hover:text-gray-300 transition-colors"
               >
-                About us
-              </a>
-              <a
-                href="/villas"
-                className="block hover:text-gray-300 transition-colors"
-              >
-                Luxury Villas
+                {t("footer.find-out-more.about")}
               </a>
               <a
                 href="/travel"
                 className="block hover:text-gray-300 transition-colors"
               >
-                Conscious Travel
+                {t("footer.find-out-more.conscious-travel")}
               </a>
               <a
                 href="/trade"
                 className="block hover:text-gray-300 transition-colors"
               >
-                Trade Portal
+                {t("footer.find-out-more.trade-portal")}
               </a>
             </div>
           </div>
 
           {/* Advocacy Section */}
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-6">ADVOCACY</h3>
+            <h3 className="text-xl font-bold mb-6 uppercase">
+              {t("footer.advocacy.title")}
+            </h3>
             <div className="flex flex-col items-center">
               <div className="w-24 h-24 rounded-full flex items-center justify-center mb-4">
                 <img
@@ -76,19 +81,21 @@ const Footer = () => {
               </div>
 
               <p className="text-center text-sm">
-                Collaboration on sustainable tourism
+                {t("footer.advocacy.description")}
               </p>
             </div>
           </div>
 
           {/* Legals Section */}
           <div className="text-center">
-            <h3 className="text-xl font-bold mb-6">LEGALS</h3>
+            <h3 className="text-xl font-bold mb-6 uppercase">
+              {t("footer.legals.title")}
+            </h3>
             <a
               href="/privacy"
               className="hover:text-gray-300 transition-colors"
             >
-              Cookies & Privacy Policy
+              {t("footer.legals.cookies-privacypolicy")}
             </a>
           </div>
         </div>
@@ -108,7 +115,7 @@ const Footer = () => {
             {/* Text Content */}
             <div className="text-sm">
               <p>© Ceylon Wanderer 2025</p>
-              <p>All Rights Reserved</p>
+              <p>{t("footer.legals.all-rights-reserved")}</p>
             </div>
           </div>
         </div>

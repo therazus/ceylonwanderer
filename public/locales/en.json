@@ -1,10 +1,19 @@
 {
   "about": {
-    "title": "Our story, since 2012",
-    "description": "Luxury travel reimagined...",
-    "impact": "IMPACT",
-    "impact_description": "Ayu in the Wild is a Travel Partner of The Long Run...",
-    "learn_more": "Learn More"
+    "title": "Crafting our story, one chapter at a time, since 2024",
+    "description": "Sri Lanka is a hidden treasure in the Indian Ocean, rich in its remarkable creations of mother nature and diverse cultures. We promote Sri Lanka on the global tourism platform not only as a typical beach vacation destination but also through its still undiscovered aspects such as culture, nature and wellness.",
+    "impact": "VISION",
+    "impact_description": "Our vision is to create a better Sri Lanka, and we choose to do so by embracing tourism. Sri Lanka is like our mother, and everything we offer to our customers is deeply connected to the well-being of our beloved country. When you understand this, we believe there's no room for doubt about the quality and impact of what we provide. Your experience with us is an experience that helps nurture and uplift Sri Lanka itself.",
+    "learn_more": "Learn More",
+
+    "icons" : {
+      "travel" : "Travel",
+      "explore" : "Explore",
+      "experience" : "Experience",
+      "adventure" : "Adventure",
+      "nature" : "Nature",
+      "discover" : "Discover"
+    }
   },
 
   "navbar": {
@@ -12,7 +21,7 @@
     "about_us": "ABOUT US",
     "destinations": "DESTINATIONS",
     "contact": "CONTACT",
-    "search_placeholder": "Search...",
+    "search": "Search...",
     "translate" : "Translate"
   },
 
@@ -20,7 +29,76 @@
     "title_line1": "Discover the untamed beauty of",
     "title_line2": "Sri Lanka",
     "description": "Where every moment becomes an unforgettable memory."
+  },
+
+  "destination": {
+    "title1":"Explore the Magical",
+    "title2":"Destinations",
+    "description":"Discover the wonders of Sri Lanka with our curated list of top destinations. From pristine beaches to ancient temples, embark on an unforgettable journey through this tropical paradise.",
+    "explore-now":"Explore Now",
+
+    "buttons" : {
+      "popular-beaches" : "Popular Beaches",
+      "wildlife-nature" : "Wildlife & Nature",
+      "adventure" : "Adventure",
+      "history-culture" : "History & Culture",
+      "lesser-travelled" : "Lesser Travelled",
+      "gastronomy" : "Gastronomy"
+    }
+
+  },
+
+
+  "sustainability": {
+    "title1":"Philosophy",
+    "title2":"Of Sustainability",
+    "description":"Join us on our effort to create positive impact in volunteer and eco-tourism across Sri Lanka. Together we can make a difference and create new possibilities for all races.",
+    "read-more":"READ MORE",
+
+    "education" : {
+      "title" : "Education",
+      "description" : "Empowering communities through knowledge and learning opportunities."
+      },
+
+      "plant" : {
+        "title" : "Plant a Tree ",
+        "description" : "Contributing to reforestation and environmental conservation."
+        },
+
+        "animal" : {
+          "title" : "Tierrettung",
+          "description" : "Protecting and caring for wildlife in need"
+      }
+
+
+
+  },
+
+
+  "footer":{
+    "connect" : {
+      "title" : "Connect",
+      "contact" : "Contact"
+    },
+
+    "find-out-more" : {
+      "title" : "Find Out More",
+      "about us": "About Us",
+      "conscious-travel" : "Conscious Travel",
+      "trade-portal" : "Trade Portal"
+  },
+
+  "advocacy" : {
+    "title" : "Advocacy",
+    "description" : "Collaborating for sustainable tourism"
+  },
+
+  "legals" : {
+    "title" : "Legals",
+   "cookies-privacypolicy" : "Cookies & Privacy Policy",
+   "all-rights-reserved" : "All Rights Reserved"
   }
+} 
 
 
 }
