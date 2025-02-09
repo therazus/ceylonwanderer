@@ -21,8 +21,13 @@
     "about_us": "ABOUT US",
     "destinations": "DESTINATIONS",
     "contact": "CONTACT",
+    "gallery": "GALLERY",
+    "blog": "BLOG",
+    "faq": "FAQ",
+    "sustainability": "SUSTAINABILITY",
     "search": "Search...",
-    "translate" : "Translate"
+    "translate": "Translate",
+    "menu": "MORE"
   },
 
   "hero": {
