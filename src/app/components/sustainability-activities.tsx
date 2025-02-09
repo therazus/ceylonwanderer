@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { Leaf, GraduationCap, Heart, ArrowRight } from "lucide-react";
 import education from "../../../public/education.jpg";
@@ -19,7 +20,7 @@ const SustainabilityActivities = () => {
           <div className="w-full md:w-1/2 relative">
             <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden relative">
               {/* Image */}
-              <img
+              <Image
                 src={sustainableimage.src}
                 alt="Sustainability Philosophy"
                 className="object-cover w-full h-full"
@@ -52,7 +53,7 @@ const SustainabilityActivities = () => {
           {/* Education Activity */}
           <div className="group relative overflow-hidden rounded-lg">
             <div className="w-full h-64 relative">
-              <img
+              <Image
                 src={education.src}
                 alt="Education"
                 className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
@@ -80,7 +81,7 @@ const SustainabilityActivities = () => {
           {/* Plant a Tree Activity */}
           <div className="group relative overflow-hidden rounded-lg">
             <div className="w-full h-64 relative">
-              <img
+              <Image
                 src={plant.src}
                 alt="Plant a Tree"
                 className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
@@ -107,7 +108,7 @@ const SustainabilityActivities = () => {
           {/* Rescue Animal Activity */}
           <div className="group relative overflow-hidden rounded-lg">
             <div className="w-full h-64 relative">
-              <img
+              <Image
                 src={animal.src}
                 alt="Rescue Animal"
                 className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"

@@ -3,7 +3,7 @@
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, Search, ChevronDown } from "lucide-react";
+import { Menu, Search } from "lucide-react";
 import logo from "../../../public/CeylonWandererL.png";
 
 import { Button } from "../components/ui/button";
