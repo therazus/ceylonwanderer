@@ -10,7 +10,7 @@ export const useCategories = () => {
     {
       id: "beaches",
       name: t("destination.buttons.popular-beaches"),
-      image: "/expt-03.jpg",
+      image: "/category-button-images/expt-03.jpg",
       locations: [
         { id: "bentota", name: "Bentota", category: "beaches", coordinates: { x: 15, y: 75 } },
         { id: "mirissa", name: "Mirissa", category: "beaches", coordinates: { x: 25, y: 85 } },
@@ -21,7 +21,7 @@ export const useCategories = () => {
     {
       id: "wildlife",
       name: t("destination.buttons.wildlife-nature"),
-      image: "/expt-01.jpg",
+      image: "/category-button-images/expt-01.jpg",
       locations: [
         { id: "yala", name: "Yala", category: "wildlife", coordinates: { x: 75, y: 75 } },
         { id: "udawalawe", name: "Udawalawe", category: "wildlife", coordinates: { x: 55, y: 65 } },
@@ -30,7 +30,7 @@ export const useCategories = () => {
     {
       id: "adventure",
       name: t("destination.buttons.adventure"),
-      image: "/expt-04.jpg",
+      image: "/category-button-images/expt-04.jpg",
       locations: [
         { id: "kitulgala", name: "Kitulgala", category: "adventure", coordinates: { x: 35, y: 45 } },
         { id: "ella", name: "Ella", category: "adventure", coordinates: { x: 65, y: 55 } },
@@ -39,7 +39,7 @@ export const useCategories = () => {
     {
       id: "culture",
       name: t("destination.buttons.history-culture"),
-      image: "/expt-02.jpg",
+      image: "/category-button-images/expt-02.jpg",
       locations: [
         { id: "sigiriya", name: "Sigiriya", category: "culture", coordinates: { x: 45, y: 33 } },
         { id: "kandy", name: "Kandy", category: "culture", coordinates: { x: 50, y: 42 } },
@@ -48,7 +48,7 @@ export const useCategories = () => {
     {
       id: "lesser-travelled",
       name: t("destination.buttons.lesser-travelled"),
-      image: "/expt-05.jpg",
+      image: "/category-button-images/expt-05.jpg",
       locations: [
         { id: "jaffna", name: "Jaffna", category: "lesser-travelled", coordinates: { x: 33, y: 13 } },
         { id: "trincomalee", name: "Trincomalee", category: "lesser-travelled", coordinates: { x: 70, y: 25 } },
@@ -57,7 +57,7 @@ export const useCategories = () => {
     {
       id: "gastronomy",
       name: t("destination.buttons.gastronomy"),
-      image: "/expt-06.jpg",
+      image: "/category-button-images/expt-06.jpg",
       locations: [
         { id: "galle", name: "Galle", category: "gastronomy", coordinates: { x: 20, y: 80 } },
         { id: "colombo", name: "Colombo", category: "gastronomy", coordinates: { x: 15, y: 45 } },
