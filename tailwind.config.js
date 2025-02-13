@@ -12,6 +12,7 @@ module.exports = {
         base: "#1A202C",
         primary: "#466d1d", // Primary green color
         tan_primary: "#657a42",
+        bg_green: "#edf1e9",
         muted_primary: "#ccd7b9",
         secondary: "#718096",
         muted: "#3d3d3d",

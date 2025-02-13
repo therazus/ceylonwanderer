@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { Instagram, Mail, Phone } from "lucide-react";
 
@@ -73,10 +74,12 @@ const Footer = () => {
             </h3>
             <div className="flex flex-col items-center">
               <div className="w-24 h-24 rounded-full flex items-center justify-center mb-4">
-                <img
+                <Image
                   src={batchlogo.src}
                   alt="Travel Sri Lanka"
-                  className="w-full h-full object-cover rounded-full"
+                  width={96} // 24 * 4 = 96px (tailwind's w-24)
+                  height={96}
+                  className="object-cover rounded-full"
                 />
               </div>
 

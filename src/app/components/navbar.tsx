@@ -47,7 +47,7 @@ export default function Navbar() {
                   {t("navbar.about_us")}
                 </Link>
                 <Link
-                  href="/local-secrets"
+                  href="/destinations"
                   className="text-lg font-medium text-base hover:text-green-900"
                 >
                   {t("navbar.destinations")}
@@ -143,7 +143,7 @@ export default function Navbar() {
             {t("navbar.about_us")}
           </Link>
           <Link
-            href="/local-secrets"
+            href="/destinations"
             className="text-sm font-medium text-base hover:text-green-900"
           >
             {t("navbar.destinations")}

@@ -3,6 +3,7 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCategories } from "../../data/categories";
 import { CategoryButton } from "./category-button";
@@ -35,13 +36,15 @@ export function SriLankaMap() {
               <p className="text-base sm:text-lg leading-relaxed">
                 {t("destination.description")}
               </p>
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="inline-flex items-center gap-2 text-base sm:text-lg font-medium px-4 sm:px-6 py-2 sm:py-3 bg-primary text-gray-100 rounded-lg hover:bg-primary/90 transition-colors"
-              >
-                {t("destination.explore-now")}
-              </motion.button>
+              <Link href="/destinations">
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="inline-flex items-center gap-2 text-base sm:text-lg font-medium px-4 sm:px-6 py-2 sm:py-3 bg-primary text-gray-100 rounded-lg hover:bg-primary/90 transition-colors"
+                >
+                  {t("destination.explore-now")}
+                </motion.button>
+              </Link>
             </motion.div>
 
             {/* Categories Grid */}

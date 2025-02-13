@@ -23,6 +23,8 @@ const SustainabilityActivities = () => {
               <Image
                 src={sustainableimage.src}
                 alt="Sustainability Philosophy"
+                width={800} // Set appropriate values
+                height={450}
                 className="object-cover w-full h-full"
               />
             </div>
@@ -57,6 +59,7 @@ const SustainabilityActivities = () => {
                 src={education.src}
                 alt="Education"
                 className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
+                fill
               />
             </div>
             <div className="absolute inset-0 bg-black bg-opacity-50 group-hover:bg-opacity-70 transition-all flex items-center justify-center">
@@ -84,6 +87,7 @@ const SustainabilityActivities = () => {
               <Image
                 src={plant.src}
                 alt="Plant a Tree"
+                fill
                 className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
               />
             </div>
@@ -111,6 +115,7 @@ const SustainabilityActivities = () => {
               <Image
                 src={animal.src}
                 alt="Rescue Animal"
+                fill
                 className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-500"
               />
             </div>
