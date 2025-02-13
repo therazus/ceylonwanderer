@@ -10,11 +10,7 @@ interface DestinationPopupProps {
   style?: React.CSSProperties;
 }
 
-export function DestinationPopup({
-  district,
-  onExplore,
-  style,
-}: DestinationPopupProps) {
+export function DestinationPopup({ district, style }: DestinationPopupProps) {
   if (!district) return null;
 
   return (

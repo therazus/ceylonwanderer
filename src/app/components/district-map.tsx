@@ -24,7 +24,7 @@ export default function DistrictMap() {
     districtId: string
   ) => {
     if (hoveredDistrict !== districtId) {
-      const rect = event.currentTarget.getBoundingClientRect();
+      // const rect = event.currentTarget.getBoundingClientRect();
       const x = event.clientX - 350; // Add offset to not be too close to cursor
       const y = event.clientY - 150; // Position above cursor
       setPopupPosition({ x, y });

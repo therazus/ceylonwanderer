@@ -66,13 +66,14 @@ export default function DestinationContent() {
         >
           <p className="text-lg text-gray-700 mb-6">
             Sri Lanka offers a perfect blend of diverse experiences, all in one
-            captivating island. Whether you're an explorer or a thrill-seeker,
+            captivating island. Whether you are an explorer or a thrill-seeker,
             Sri Lanka caters to every interest with its lush landscapes and
             endless adventures.
           </p>
           <p className="text-lg font-semibold text-primary">
-            Experience the perfect weather and Sri Lanka's year-round warmth and
-            sunshine!
+            {/* fix lint issues */}
+            Experience the perfect weather and Sri Lanka&#39;s year-round warmth
+            and sunshine!
           </p>
         </motion.div>
       </div>

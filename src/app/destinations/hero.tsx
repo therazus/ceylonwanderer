@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import heroImage from "../../../public/sllandscape.jpg";
 
 export default function Hero() {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
