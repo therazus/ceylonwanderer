@@ -23,9 +23,9 @@ export default function DestinationPage() {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      <main className="pt-[160px]">
+      <main className="pt-[64px]">
         {/* Hero Carousel Section */}
-        <Carousel images={destination.images}>
+        <Carousel images={destination.images} className="h-[calc(110vh-64px)]">
           <div className="absolute bottom-12 left-8 md:bottom-24 md:left-16 text-white max-w-lg">
             <h1 className="mb-4 text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight">
               {destination.name}
@@ -38,7 +38,7 @@ export default function DestinationPage() {
             <div className="flex items-center gap-4 bg-black/60 p-4 rounded-lg backdrop-blur-sm">
               <Plane className="h-8 w-8 text-muted_primary" />
               <div>
-                <p className="text-sm text-muted_primary">
+                <p className="text-sm  text-muted_primary">
                   Flights To {destination.name}
                 </p>
                 <p className="text-lg sm:text-xl lg:text-2xl font-bold text-white">
@@ -49,7 +49,7 @@ export default function DestinationPage() {
             <div className="flex items-center gap-4 bg-black/60 p-4 rounded-lg backdrop-blur-sm">
               <Bed className="h-8 w-8 text-muted_primary" />
               <div>
-                <p className="text-sm text-muted_primary">Vacations Plan</p>
+                <p className="text-sm  text-muted_primary">Vacations Plan</p>
                 <p className="text-lg sm:text-xl lg:text-2xl font-bold text-white">
                   ${destination.vacationCost.amount}/
                   {destination.vacationCost.duration}

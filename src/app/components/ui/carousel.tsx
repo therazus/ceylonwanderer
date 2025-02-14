@@ -1,15 +1,15 @@
 "use client";
 
+import type React from "react";
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import type React from "react"; // Added import for React
 
 interface CarouselProps {
   images: string[];
   children: React.ReactNode;
+  className?: string;
 }
 
-export function Carousel({ images, children }: CarouselProps) {
+export function Carousel({ images, children, className = "" }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export function Carousel({ images, children }: CarouselProps) {
   };
 
   return (
-    <div className="relative h-[80vh] w-full overflow-hidden">
+    <div className={`relative overflow-hidden ${className}`}>
       {images.map((image, index) => (
         <div
           key={index}
@@ -39,23 +39,6 @@ export function Carousel({ images, children }: CarouselProps) {
           <div className="absolute inset-0 bg-black/40" />
         </div>
       ))}
-
-      <div className="absolute inset-0 flex items-center justify-between p-4">
-        <button
-          onClick={() =>
-            goToSlide((currentIndex - 1 + images.length) % images.length)
-          }
-          className="rounded-full bg-black/50 p-2 text-white hover:bg-black/75"
-        >
-          <ChevronLeft className="h-6 w-6" />
-        </button>
-        <button
-          onClick={() => goToSlide((currentIndex + 1) % images.length)}
-          className="rounded-full bg-black/50 p-2 text-white hover:bg-black/75"
-        >
-          <ChevronRight className="h-6 w-6" />
-        </button>
-      </div>
 
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
         {images.map((_, index) => (
