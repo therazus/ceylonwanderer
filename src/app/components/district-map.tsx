@@ -1,22 +1,21 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { districts } from "../data/districts";
 import { DestinationPopup } from "./destination-popup";
 
 export default function DistrictMap() {
+  const router = useRouter();
+
   const [hoveredDistrict, setHoveredDistrict] = useState<string | null>(null);
   const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
 
   const handleDistrictClick = (name: string) => {
-    window.open(
-      `https://www.google.com/search?q=${encodeURIComponent(
-        name + " Sri Lanka"
-      )}`,
-      "_blank"
-    );
+    const slug = name.toLowerCase().replace(/\s/g, "-");
+    router.push(`/destinations/${slug}`);
   };
 
   const handleMouseMove = (
