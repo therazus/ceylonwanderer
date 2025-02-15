@@ -13,7 +13,10 @@ const SustainabilityActivities = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-gradient-to-b from-primary to-tan_primary text-white py-20">
+    <section
+      id="sustainability-section"
+      className="bg-gradient-to-b from-primary to-tan_primary text-white py-20"
+    >
       {/* Philosophy Header */}
       <div className="container mx-auto px-4 mb-16">
         <div className="flex flex-col md:flex-row gap-12 items-center">

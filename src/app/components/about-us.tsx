@@ -8,7 +8,7 @@ export default function AboutUs() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative py-16 bg-white">
+    <section id="about-us" className="relative py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
           <div className="bg-gray-50 p-8 rounded-2xl flex flex-col items-center text-center">
