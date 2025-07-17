@@ -32,7 +32,7 @@ const Footer = () => {
                 className="flex items-center justify-center gap-2 hover:text-gray-300 transition-colors"
               >
                 <Phone size={18} />
-                +94 77 248 1100
+                +49 15 170336757
               </a>
               <button className="border border-white px-6 py-2 hover:bg-white hover:text-gray-900 transition-all">
                 {t("footer.connect.contact")}
