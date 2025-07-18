@@ -153,10 +153,11 @@ export function SriLankaMap() {
 
           {/* Map Section */}
           <div className="lg:w-8/12 relative mt-8 lg:mt-0">
-            <div
-              ref={mapContainerRef}
-              className="relative h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[800px] rounded-2xl overflow-hidden"
-            >
+            <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[800px] rounded-2xl overflow-hidden">
+              <div
+                ref={mapContainerRef}
+                className="relative w-full h-full"
+              >
               <Image
                 ref={imageRef}
                 src={slmap || "/placeholder.svg"}
@@ -177,8 +178,6 @@ export function SriLankaMap() {
                       <LocationMarker
                         key={location.id}
                         name={location.name}
-                        x={location.coordinates.x}
-                        y={location.coordinates.y}
                         isVisible={activeCategory === category.id}
                         style={{
                           position: "absolute",
@@ -191,6 +190,7 @@ export function SriLankaMap() {
                   })
                 )}
               </AnimatePresence>
+              </div>
             </div>
           </div>
         </div>
