@@ -6,9 +6,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { districts } from "../data/districts";
 import { DestinationPopup } from "./destination-popup";
+import { useTranslation } from "react-i18next";
 
 export default function DistrictMap() {
   const router = useRouter();
+  const { t } = useTranslation();
 
   const [hoveredDistrict, setHoveredDistrict] = useState<string | null>(null);
   const [popupPosition, setPopupPosition] = useState({ x: 0, y: 0 });
@@ -58,10 +60,10 @@ export default function DistrictMap() {
       <div className="max-w-6xl mx-auto px-4 relative z-10 py-12">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-primary mb-2">
-            Explore Sri Lanka
+            {t("destination-page.district_map.title")}
           </h2>
           <p className="text-xl text-gray-600">
-            Discover the unique charm and beauty of each district
+            {t("destination-page.district_map.subtitle")}
           </p>
         </div>
 

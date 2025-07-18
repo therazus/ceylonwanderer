@@ -103,7 +103,67 @@
    "cookies-privacypolicy" : "Cookies & Privacy Policy",
    "all-rights-reserved" : "All Rights Reserved"
   }
-} 
+},
+
+
+  "destination-page":{
+    "hero": {
+      "title": "Sri Lanka",
+      "subtitle": "The Island of Endless Diversity"
+    },
+    "content": {
+      "main_title": "Discover the Magic of Sri Lanka",
+      "features": {
+        "beaches": {
+          "title": "Sun-Soaked Beaches",
+          "description": "Experience pristine coastlines and golden sands perfect for relaxation and water sports."
+        },
+        "landscapes": {
+          "title": "Diverse Landscapes", 
+          "description": "Explore lush rainforests, stunning mountain ranges, and serene lakes all in one island."
+        },
+        "culinary": {
+          "title": "Culinary Journey",
+          "description": "Embark on a gastronomic adventure with Sri Lanka's rich and diverse cuisine."
+        },
+        "wellness": {
+          "title": "Wellness & Ayurveda",
+          "description": "Rejuvenate your body and mind with traditional Ayurvedic treatments and yoga retreats."
+        }
+      },
+      "description": "Whether you want to spend a typical beach or wellness vacation, explore nature and seek adventure, or experience the vibrant Sri Lankan culture, we will arrange a tailor-made itinerary for you in our country.",
+      "closing_text": "Sri Lanka offers a perfect blend of diverse experiences - all in one captivating island."
+    },
+    "district_map": {
+      "title": "Explore Sri Lanka",
+      "subtitle": "Discover the unique charm and beauty of each district"
+    }
+  },
+
+  "districts": {
+    "colombo": "The commercial capital and largest city of Sri Lanka.",
+    "gampaha": "An urban district adjacent to Colombo, known for its industrial and economic importance.",
+    "kalutara": "A coastal district famous for its beaches, rubber plantations, and the Kalutara Bodhiya.",
+    "kandy": "The cultural capital of Sri Lanka, home to the sacred Temple of the Tooth Relic.",
+    "matale": "A spice-growing region in the central highlands with historic sites like Aluvihare Rock Temple.",
+    "nuwaraeliya": "The 'Little England' of Sri Lanka, famous for tea estates and cool climate.",
+    "galle": "A coastal city famous for the Galle Fort, a UNESCO World Heritage Site.",
+    "matara": "A coastal district with colonial-era architecture and scenic beaches.",
+    "hambantota": "A rapidly developing district with a modern port and national parks.",
+    "jaffna": "The cultural heart of Sri Lankan Tamils, known for its temples and historical sites.",
+    "vanni": "A gateway to the Northern Province with a mix of cultures and agricultural importance.",
+    "batticaloa": "A coastal district with beautiful lagoons and a rich Tamil cultural heritage.",
+    "digamadulla": "A district with a mix of agriculture, wildlife, and historic Buddhist sites.",
+    "trincomalee": "A natural harbor city with stunning beaches and historical significance.",
+    "kurunegala": "A historical district with ancient rock temples and a strong agricultural base.",
+    "puttalam": "A district known for salt production, fishing, and the Wilpattu National Park.",
+    "anuradhapura": "The ancient capital known for its well-preserved ruins of Sri Lankan civilization.",
+    "polonnaruwa": "The medieval capital of Sri Lanka with well-preserved ancient ruins.",
+    "badulla": "A picturesque district in the central highlands, famous for tea plantations and waterfalls.",
+    "monaragala": "A rural district known for its natural beauty, mountains, and wildlife.",
+    "ratnapura": "The gem capital of Sri Lanka, rich in natural beauty and waterfalls.",
+    "kegalle": "A district with lush greenery, famous for rubber plantations and the Pinnawala Elephant Orphanage."
+  }
 
 
 }

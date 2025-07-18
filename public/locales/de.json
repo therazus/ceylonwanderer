@@ -104,6 +104,65 @@
    "cookies-privacypolicy" : "Cookies & Datenschutz",
    "all-rights-reserved" : "Alle Rechte vorbehalten"
   }
-} 
+},
+
+  "destination-page": {
+    "hero": {
+      "title": "Sri Lanka",
+      "subtitle": "Die Insel der grenzenlosen Vielfalt"
+    },
+    "content": {
+      "main_title": "Entdecken Sie die Magie von Sri Lanka",
+      "features": {
+        "beaches": {
+          "title": "Sonnenverwöhnte Strände",
+          "description": "Erleben Sie unberührte Küsten und goldene Sandstrände, die perfekt zum Entspannen und für Wassersport geeignet sind."
+        },
+        "landscapes": {
+          "title": "Verschiedene Landschaften",
+          "description": "Erforschen Sie üppige Regenwälder, atemberaubende Gebirgsketten und friedliche Seen – alles auf einer Insel."
+        },
+        "culinary": {
+          "title": "Kulinarische Reise",
+          "description": "Begeben Sie sich auf ein gastronomisches Abenteuer mit der reichen und vielfältigen Küche Sri Lankas."
+        },
+        "wellness": {
+          "title": "Wellness & Ayurveda",
+          "description": "Verjüngen Sie Körper und Geist mit traditionellen ayurvedischen Behandlungen und Yoga-Retreats."
+        }
+      },
+      "description": "Egal, ob Sie einen typischen Strand- oder Wellnessurlaub verbringen, die Natur erkunden und Abenteuer suchen oder die lebendige sri-lankische Kultur erleben möchten, wir stellen Ihnen eine maßgeschneiderte Reiseroute in unserem Land zusammen.",
+      "closing_text": "Sri Lanka bietet eine perfekte Mischung aus vielfältigen Erlebnissen – alles auf einer faszinierenden Insel."
+    },
+    "district_map": {
+      "title": "Erkunden Sie Sri Lanka",
+      "subtitle": "Entdecken Sie den einzigartigen Charme und die Schönheit jedes Bezirks"
+    }
+  },
+
+  "districts": {
+    "colombo": "Die Handelshauptstadt und größte Stadt Sri Lankas.",
+    "gampaha": "Ein städtischer Bezirk neben Colombo, bekannt für seine industrielle und wirtschaftliche Bedeutung.",
+    "kalutara": "Ein Küstenbezirk, berühmt für seine Strände, Kautschukplantagen und die Kalutara Bodhiya.",
+    "kandy": "Die kulturelle Hauptstadt Sri Lankas, Heimat des heiligen Zahntempels.",
+    "matale": "Eine Gewürzanbauregion im zentralen Hochland mit historischen Stätten wie dem Aluvihare-Felsentempel.",
+    "nuwaraeliya": "Das 'kleine England' Sri Lankas, berühmt für Teeplantagen und kühles Klima.",
+    "galle": "Eine Küstenstadt, berühmt für das Galle Fort, ein UNESCO-Weltkulturerbe.",
+    "matara": "Ein Küstenbezirk mit kolonialer Architektur und malerischen Stränden.",
+    "hambantota": "Ein sich schnell entwickelnder Bezirk mit einem modernen Hafen und Nationalparks.",
+    "jaffna": "Das kulturelle Herz der sri-lankischen Tamilen, bekannt für seine Tempel und historischen Stätten.",
+    "vanni": "Ein Tor zur Nordprovinz mit einer Mischung aus Kulturen und landwirtschaftlicher Bedeutung.",
+    "batticaloa": "Ein Küstenbezirk mit wunderschönen Lagunen und einem reichen tamilischen kulturellen Erbe.",
+    "digamadulla": "Ein Bezirk mit einer Mischung aus Landwirtschaft, Tierwelt und historischen buddhistischen Stätten.",
+    "trincomalee": "Eine natürliche Hafenstadt mit atemberaubenden Stränden und historischer Bedeutung.",
+    "kurunegala": "Ein historischer Bezirk mit alten Felsentempeln und einer starken landwirtschaftlichen Basis.",
+    "puttalam": "Ein Bezirk, bekannt für Salzproduktion, Fischerei und den Wilpattu-Nationalpark.",
+    "anuradhapura": "Die alte Hauptstadt, bekannt für ihre gut erhaltenen Ruinen der sri-lankischen Zivilisation.",
+    "polonnaruwa": "Die mittelalterliche Hauptstadt Sri Lankas mit gut erhaltenen antiken Ruinen.",
+    "badulla": "Ein malerischer Bezirk im zentralen Hochland, berühmt für Teeplantagen und Wasserfälle.",
+    "monaragala": "Ein ländlicher Bezirk, bekannt für seine natürliche Schönheit, Berge und Tierwelt.",
+    "ratnapura": "Die Edelsteinhauptstadt Sri Lankas, reich an natürlicher Schönheit und Wasserfällen.",
+    "kegalle": "Ein Bezirk mit üppigem Grün, berühmt für Kautschukplantagen und das Pinnawala-Elefantenwaisenhaus."
+  }
 
 }

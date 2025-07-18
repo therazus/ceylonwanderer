@@ -35,7 +35,7 @@ export default function Navbar() {
             <SheetContent side="left" className="bg-white text-base">
               <div className="flex flex-col space-y-4">
                 <Link
-                  href="/trade-portal"
+                  href="/"
                   className="text-lg font-medium text-base hover:text-green-900"
                 >
                   {t("navbar.home")}
@@ -131,7 +131,7 @@ export default function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden lg:flex lg:items-center lg:space-x-8 text-base">
           <Link
-            href="/trade-portal"
+            href="/"
             className="text-sm font-medium text-base hover:text-green-900"
           >
             {t("navbar.home")}

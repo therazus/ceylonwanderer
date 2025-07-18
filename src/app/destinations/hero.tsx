@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import heroImage from "../../../public/sllandscape.jpg";
 
 export default function Hero() {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
@@ -35,10 +35,10 @@ export default function Hero() {
       {/* Text Content */}
       <div className="relative flex h-full flex-col items-center justify-center px-4 pt-20 text-center text-white">
         <h1 className="text-6xl font-semibold tracking-wider sm:text-2xl lg:text-8xl uppercase">
-          Sri Lanka
+          {t("destination-page.hero.title")}
         </h1>
         <h1 className="-mt-6 text-6xl sm:text-2xl lg:text-8xl  font-caveat text-muted_primary leading-none">
-          The Island of Endless Diversity
+          {t("destination-page.hero.subtitle")}
         </h1>
         <p className="text-lg font-light tracking-wide sm:text-xl md:text-2xl"></p>
       </div>

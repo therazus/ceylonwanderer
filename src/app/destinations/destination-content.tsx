@@ -1,34 +1,37 @@
 import { motion } from "framer-motion";
 import { TreePalm, Mountain, Utensils, Leaf } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
-const features = [
+
+
+
+
+export default function DestinationContent() {
+  const { t } = useTranslation();
+
+  const features = [
   {
     icon: TreePalm,
-    title: "Sun-Soaked Beaches",
-    description:
-      "Experience pristine coastlines and golden sands perfect for relaxation and water sports.",
+    title: t("destination-page.content.features.beaches.title"),
+    description: t("destination-page.content.features.beaches.description"),
   },
   {
     icon: Mountain,
-    title: "Diverse Landscapes",
-    description:
-      "Explore lush rainforests, stunning mountain ranges, and serene lakes all in one island.",
+    title: t("destination-page.content.features.landscapes.title"),
+    description: t("destination-page.content.features.landscapes.description"),
   },
   {
     icon: Utensils,
-    title: "Culinary Journey",
-    description:
-      "Embark on a gastronomic adventure with Sri Lanka's rich and diverse cuisine.",
+    title: t("destination-page.content.features.culinary.title"),
+    description: t("destination-page.content.features.culinary.description"),
   },
   {
     icon: Leaf,
-    title: "Wellness & Ayurveda",
-    description:
-      "Rejuvenate your body and mind with traditional Ayurvedic treatments and yoga retreats.",
+    title: t("destination-page.content.features.wellness.title"),
+    description: t("destination-page.content.features.wellness.description"),
   },
 ];
 
-export default function DestinationContent() {
   return (
     <section className="py-20 relative bg-white">
       <div className="max-w-6xl mx-auto px-4">
@@ -38,7 +41,7 @@ export default function DestinationContent() {
           viewport={{ once: true }}
           className="text-4xl font-bold text-center mb-12 text-primary"
         >
-          Discover the Magic of Sri Lanka
+          {t("destination-page.content.main_title")}
         </motion.h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
@@ -65,15 +68,11 @@ export default function DestinationContent() {
           className="mt-12 text-center"
         >
           <p className="text-lg text-gray-700 mb-6">
-            Sri Lanka offers a perfect blend of diverse experiences, all in one
-            captivating island. Whether you are an explorer or a thrill-seeker,
-            Sri Lanka caters to every interest with its lush landscapes and
-            endless adventures.
+            {t("destination-page.content.description")}
           </p>
           <p className="text-lg font-semibold text-primary">
             {/* fix lint issues */}
-            Experience the perfect weather and Sri Lanka&#39;s year-round warmth
-            and sunshine!
+            {t("destination-page.content.closing_text")}
           </p>
         </motion.div>
       </div>
