@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -13,8 +13,86 @@ import slmap from "../../../../public/Sri-lankan-map.png";
 export function SriLankaMap() {
   const { t } = useTranslation();
   const categories = useCategories();
+  const mapContainerRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
 
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
+  const [mapDimensions, setMapDimensions] = useState({
+    width: 0,
+    height: 0,
+    offsetX: 0,
+    offsetY: 0,
+  });
+
+  // Calculate actual map dimensions and position
+  const calculateMapDimensions = () => {
+    if (!mapContainerRef.current || !imageRef.current) return;
+
+    const container = mapContainerRef.current;
+    const containerRect = container.getBoundingClientRect();
+
+    // Get the natural dimensions of the image using native browser Image
+    const img = new window.Image();
+    img.onload = () => {
+      const containerWidth = containerRect.width;
+      const containerHeight = containerRect.height;
+      
+      // Account for padding (p-4 = 16px on each side)
+      const paddingOffset = 32; // 16px * 2 (left + right, top + bottom)
+      const availableWidth = containerWidth - paddingOffset;
+      const availableHeight = containerHeight - paddingOffset;
+      
+      const imageAspectRatio = img.width / img.height;
+      const containerAspectRatio = availableWidth / availableHeight;
+
+      let actualWidth, actualHeight, offsetX, offsetY;
+
+      if (imageAspectRatio > containerAspectRatio) {
+        // Image is wider than container ratio - fit to width
+        actualWidth = availableWidth;
+        actualHeight = availableWidth / imageAspectRatio;
+        offsetX = 16; // padding offset
+        offsetY = 16 + (availableHeight - actualHeight) / 2;
+      } else {
+        // Image is taller than container ratio - fit to height
+        actualHeight = availableHeight;
+        actualWidth = availableHeight * imageAspectRatio;
+        offsetX = 16 + (availableWidth - actualWidth) / 2;
+        offsetY = 16; // padding offset
+      }
+
+      setMapDimensions({
+        width: actualWidth,
+        height: actualHeight,
+        offsetX,
+        offsetY,
+      });
+    };
+    img.src = slmap.src;
+  };
+
+  useEffect(() => {
+    calculateMapDimensions();
+
+    const handleResize = () => {
+      calculateMapDimensions();
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Convert percentage coordinates to actual pixel positions
+  const getActualPosition = (x: number, y: number) => {
+    if (mapDimensions.width === 0 || mapDimensions.height === 0) {
+      return { x: 0, y: 0 };
+    }
+
+    return {
+      x: mapDimensions.offsetX + (x / 100) * mapDimensions.width,
+      y: mapDimensions.offsetY + (y / 100) * mapDimensions.height,
+    };
+  };
 
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-primary/10 bg-white">
@@ -75,25 +153,42 @@ export function SriLankaMap() {
 
           {/* Map Section */}
           <div className="lg:w-8/12 relative mt-8 lg:mt-0">
-            <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[800px] rounded-2xl overflow-hidden">
+            <div
+              ref={mapContainerRef}
+              className="relative h-[400px] sm:h-[500px] lg:h-[600px] xl:h-[800px] rounded-2xl overflow-hidden"
+            >
               <Image
+                ref={imageRef}
                 src={slmap || "/placeholder.svg"}
                 alt="Sri Lanka Map"
                 fill
                 className="object-contain p-4"
                 priority
+                onLoad={calculateMapDimensions}
               />
               <AnimatePresence>
                 {categories.map((category) =>
-                  category.locations.map((location) => (
-                    <LocationMarker
-                      key={location.id}
-                      name={location.name}
-                      x={location.coordinates.x}
-                      y={location.coordinates.y}
-                      isVisible={activeCategory === category.id}
-                    />
-                  ))
+                  category.locations.map((location) => {
+                    const position = getActualPosition(
+                      location.coordinates.x,
+                      location.coordinates.y
+                    );
+                    return (
+                      <LocationMarker
+                        key={location.id}
+                        name={location.name}
+                        x={location.coordinates.x}
+                        y={location.coordinates.y}
+                        isVisible={activeCategory === category.id}
+                        style={{
+                          position: "absolute",
+                          left: `${position.x}px`,
+                          top: `${position.y}px`,
+                          transform: "translate(-50%, -50%)",
+                        }}
+                      />
+                    );
+                  })
                 )}
               </AnimatePresence>
             </div>
