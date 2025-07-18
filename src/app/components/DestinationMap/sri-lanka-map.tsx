@@ -82,15 +82,56 @@ export function SriLankaMap() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Convert percentage coordinates to actual pixel positions
-  const getActualPosition = (x: number, y: number) => {
+  // Convert percentage coordinates to actual pixel positions with offset for overlapping markers
+  const getActualPosition = (x: number, y: number, locationId: string, categoryId: string) => {
     if (mapDimensions.width === 0 || mapDimensions.height === 0) {
       return { x: 0, y: 0 };
     }
 
+    const baseX = mapDimensions.offsetX + (x / 100) * mapDimensions.width;
+    const baseY = mapDimensions.offsetY + (y / 100) * mapDimensions.height;
+
+    // Check for overlapping markers and apply offset
+    let offsetX = 0;
+    let offsetY = 0;
+    let overlapCount = 0;
+
+    // Find all other markers with the same or very close coordinates
+    categories.forEach((category) => {
+      category.locations.forEach((location) => {
+        // Skip the current location
+        if (location.id === locationId && category.id === categoryId) return;
+        
+        // Check if coordinates are the same or very close (within 1% tolerance)
+        const isSameX = Math.abs(location.coordinates.x - x) < 1;
+        const isSameY = Math.abs(location.coordinates.y - y) < 1;
+        
+        if (isSameX && isSameY) {
+          overlapCount++;
+        }
+      });
+    });
+
+    // Apply offset if there are overlapping markers
+    if (overlapCount > 0) {
+      // Create a unique offset based on the location and category ID
+      const uniqueId = `${categoryId}-${locationId}`;
+      const hash = uniqueId.split('').reduce((a, b) => {
+        a = ((a << 5) - a) + b.charCodeAt(0);
+        return a & a;
+      }, 0);
+      
+      // Use hash to determine offset direction and distance
+      const angle = (Math.abs(hash) % 360) * (Math.PI / 180);
+      const distance = 8; // 8px offset
+      
+      offsetX = Math.cos(angle) * distance;
+      offsetY = Math.sin(angle) * distance;
+    }
+
     return {
-      x: mapDimensions.offsetX + (x / 100) * mapDimensions.width,
-      y: mapDimensions.offsetY + (y / 100) * mapDimensions.height,
+      x: baseX + offsetX,
+      y: baseY + offsetY,
     };
   };
 
@@ -172,11 +213,13 @@ export function SriLankaMap() {
                   category.locations.map((location) => {
                     const position = getActualPosition(
                       location.coordinates.x,
-                      location.coordinates.y
+                      location.coordinates.y,
+                      location.id,
+                      category.id
                     );
                     return (
                       <LocationMarker
-                        key={location.id}
+                        key={`${category.id}-${location.id}`}
                         name={location.name}
                         isVisible={activeCategory === category.id}
                         style={{
