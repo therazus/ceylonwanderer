@@ -6,6 +6,45 @@
     "impact_description": "Our vision is to create a better Sri Lanka, and we choose to do so by embracing tourism. Sri Lanka is like our mother, and everything we offer to our customers is deeply connected to the well-being of our beloved country. When you understand this, we believe there's no room for doubt about the quality and impact of what we provide. Your experience with us is an experience that helps nurture and uplift Sri Lanka itself.",
     "learn_more": "Learn More",
 
+    "hero": {
+      "title": "About Ceylon Wanderer",
+      "subtitle": "Your trusted bridge between Germany and the pearl of the Indian Ocean",
+      "cta1": "Our Story",
+      "cta2": "Contact Us"
+    },
+
+    "unique": {
+      "title": "Why We Are Unique?",
+      "subtitle": "Discover what sets Ceylon Wanderer apart in creating exceptional travel experiences between Germany and Sri Lanka.",
+      "bridge": {
+        "title": "A Bridge Between Two Worlds",
+        "description": "Born from a personal journey of cultural connection, our platform uniquely bridges the gap between Germany and Sri Lanka. With first-hand experience living in Germany and a deep-rooted love for Sri Lanka, we understand the expectations of German travelers and can tailor unforgettable experiences that respect both cultures."
+      },
+      "authentic": {
+        "title": "Authentic and Personalized Experiences",
+        "description": "Unlike mass-market travel agencies, we offer deeply curated, authentic Sri Lankan travel experiences—hosted by locals and designed with cultural sensitivity and insider knowledge. Our tours go beyond typical tourist routes, giving guests a chance to truly connect with Sri Lanka's people, nature, food, and heritage."
+      },
+      "expertise": {
+        "title": "Local Expertise, International Standards",
+        "description": "Our operations in Sri Lanka are handled by trusted family members and professionals who know the country inside out. This ensures travelers experience genuine hospitality while enjoying well-organized, safe, and comfortable journeys that meet high international standards."
+      },
+      "purpose": {
+        "title": "Driven by Purpose, Not Just Profit",
+        "description": "This business is rooted in love—love for Sri Lanka and a desire to contribute to its positive development. A portion of our profits will go toward sustainable local initiatives, supporting communities and preserving the beauty that makes Sri Lanka so special."
+      },
+      "german": {
+        "title": "Tailored for the German Traveler",
+        "description": "Having trained as a tourism assistant manager in Germany, we understand what German tourists value most—efficiency, reliability, safety, and meaningful travel. Every aspect of our service is designed to meet these expectations, with German-language support, clear communication, and thoughtful itinerary planning."
+      }
+    },
+
+    "cta": {
+      "title": "Ready to Experience Sri Lanka?",
+      "description": "Let us create a personalized journey that connects you with the authentic heart of Sri Lanka.",
+      "primary": "Plan Your Journey",
+      "secondary": "Learn More"
+    },
+
     "icons" : {
       "travel" : "Travel",
       "explore" : "Explore",

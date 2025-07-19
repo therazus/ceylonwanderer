@@ -7,6 +7,45 @@
     "impact_description": "Unsere Vision ist es, ein besseres Sri Lanka zu schaffen, und wir wählen den Weg des Tourismus, um dies zu erreichen. Sri Lanka ist wie unsere Mutter, und alles, was wir unseren Kunden bieten, ist tief mit dem Wohl unseres geliebten Landes verbunden. Wenn man dies versteht, gibt es keinen Zweifel an der Qualität und Wirkung dessen, was wir bieten. Ihre Erfahrung mit uns ist eine Erfahrung, die Sri Lanka selbst nährt und stärkt.",
     "learn_more": "Mehr erfahren",
 
+    "hero": {
+      "title": "Über Ceylon Wanderer",
+      "subtitle": "Ihre vertrauensvolle Brücke zwischen Deutschland und der Perle des Indischen Ozeans",
+      "cta1": "Unsere Geschichte",
+      "cta2": "Kontakt"
+    },
+
+    "unique": {
+      "title": "Warum sind wir einzigartig?",
+      "subtitle": "Entdecken Sie, was Ceylon Wanderer bei der Gestaltung außergewöhnlicher Reiseerfahrungen zwischen Deutschland und Sri Lanka auszeichnet.",
+      "bridge": {
+        "title": "Eine Brücke zwischen zwei Welten",
+        "description": "Geboren aus einer persönlichen Reise der kulturellen Verbindung, schlägt unsere Plattform einzigartig die Brücke zwischen Deutschland und Sri Lanka. Mit der Erfahrung des Lebens in Deutschland und einer tief verwurzelten Liebe zu Sri Lanka verstehen wir die Erwartungen deutscher Reisender und können unvergessliche Erfahrungen schaffen, die beide Kulturen respektieren."
+      },
+      "authentic": {
+        "title": "Authentische und personalisierte Erfahrungen",
+        "description": "Im Gegensatz zu Massenmarkt-Reiseagenturen bieten wir tief kuratierte, authentische sri-lankische Reiseerfahrungen - von Einheimischen veranstaltet und mit kultureller Sensibilität und Insiderwissen gestaltet. Unsere Touren gehen über typische Touristenrouten hinaus und geben Gästen die Chance, sich wirklich mit Sri Lankas Menschen, Natur, Essen und Erbe zu verbinden."
+      },
+      "expertise": {
+        "title": "Lokale Expertise, internationale Standards",
+        "description": "Unsere Operationen in Sri Lanka werden von vertrauenswürdigen Familienmitgliedern und Fachleuten abgewickelt, die das Land in- und auswendig kennen. Dies gewährleistet, dass Reisende echte Gastfreundschaft erleben und gleichzeitig gut organisierte, sichere und komfortable Reisen genießen, die hohen internationalen Standards entsprechen."
+      },
+      "purpose": {
+        "title": "Von Zweck getrieben, nicht nur von Profit",
+        "description": "Dieses Geschäft wurzelt in Liebe - Liebe zu Sri Lanka und dem Wunsch, zu seiner positiven Entwicklung beizutragen. Ein Teil unserer Gewinne fließt in nachhaltige lokale Initiativen, um Gemeinden zu unterstützen und die Schönheit zu bewahren, die Sri Lanka so besonders macht."
+      },
+      "german": {
+        "title": "Maßgeschneidert für den deutschen Reisenden",
+        "description": "Mit einer Ausbildung als Tourismusassistenz-Manager in Deutschland verstehen wir, was deutsche Touristen am meisten schätzen - Effizienz, Zuverlässigkeit, Sicherheit und sinnvolles Reisen. Jeder Aspekt unseres Service ist darauf ausgelegt, diese Erwartungen zu erfüllen, mit deutschsprachiger Unterstützung, klarer Kommunikation und durchdachter Reiseplanung."
+      }
+    },
+
+    "cta": {
+      "title": "Bereit, Sri Lanka zu erleben?",
+      "description": "Lassen Sie uns eine personalisierte Reise schaffen, die Sie mit dem authentischen Herzen Sri Lankas verbindet.",
+      "primary": "Ihre Reise planen",
+      "secondary": "Mehr erfahren"
+    },
+
     "icons" : {
       "travel" : "Reisen",
       "explore" : "Erkunden",

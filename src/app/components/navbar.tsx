@@ -41,7 +41,7 @@ export default function Navbar() {
                   {t("navbar.home")}
                 </Link>
                 <Link
-                  href="/about-us"
+                  href="/about"
                   className="text-lg font-medium text-base hover:text-green-900"
                 >
                   {t("navbar.about_us")}
@@ -137,7 +137,7 @@ export default function Navbar() {
             {t("navbar.home")}
           </Link>
           <Link
-            href="/about-us"
+            href="/about"
             className="text-sm font-medium text-base hover:text-green-900"
           >
             {t("navbar.about_us")}

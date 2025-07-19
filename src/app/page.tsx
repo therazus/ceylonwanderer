@@ -12,7 +12,9 @@ export default function Page() {
       <Navbar />
       <Hero />
       <AboutUs />
-      <SriLankaMap />
+      <div id="sri-lanka-map">
+        <SriLankaMap />
+      </div>
       <SustainabilityActivities />
       <Testimonials />
       <Footer />
