@@ -2,6 +2,7 @@
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback } from "react";
+import Image from "next/image";
 
 interface Testimonial {
   content: string;
@@ -113,11 +114,12 @@ export function Testimonials() {
                       </div>
 
                       {/* Right Side: Image */}
-                      <div className="w-16 h-16 rounded-full overflow-hidden">
-                        <img
+                      <div className="w-16 h-16 rounded-full overflow-hidden relative">
+                        <Image
                           src={testimonial.image || "/placeholder.svg"}
                           alt={testimonial.author}
-                          className="w-full h-full object-cover"
+                          fill
+                          className="object-cover"
                         />
                       </div>
                     </div>

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Heart, Globe, Users, Shield, Star } from "lucide-react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface UniqueFeature {
   icon: React.ReactNode;
@@ -102,10 +103,11 @@ export function WhyUniqueSection() {
                   
                   {/* Image container with 1:1 aspect ratio */}
                   <div className="relative w-full aspect-square overflow-hidden rounded-[2.5rem] transform -rotate-3 shadow-2xl">
-                    <img 
+                    <Image 
                       src={feature.image} 
                       alt={feature.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
                   </div>
