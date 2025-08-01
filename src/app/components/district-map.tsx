@@ -34,7 +34,7 @@ export default function DistrictMap() {
   };
 
   return (
-    <section className="min-h-screen relative bg-[#e6f4e6] overflow-hidden flex items-center">
+    <section className="min-h-screen relative bg-white overflow-hidden flex items-center">
       {/* Devil mask decorations */}
       <div className=" inset-0 pointer-events-none">
         <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[30vw] h-auto">
@@ -96,11 +96,11 @@ export default function DistrictMap() {
                     d={district.path}
                     fill={
                       hoveredDistrict === district.id
-                        ? "#466d1d"
+                        ? "#028A0F"
                         : `url(#image-${district.id})`
                     }
                     stroke={
-                      hoveredDistrict === district.id ? "#466d1d" : "#fff"
+                      hoveredDistrict === district.id ? "#028A0F" : "#fff"
                     }
                     strokeWidth={1}
                     className="transition-all duration-300 cursor-pointer"

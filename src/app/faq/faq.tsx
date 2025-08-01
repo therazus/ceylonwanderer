@@ -55,7 +55,7 @@ export function FAQ() {
                 className="w-full h-auto"
               />
             </div>
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-caveat italic text-primary mb-2">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl italic font-medium text-primary mb-2 tracking-wide">
               Frequently Asked Questions
             </h2>
             <h3 className="text-base font-bold tracking-wider uppercase text-base">

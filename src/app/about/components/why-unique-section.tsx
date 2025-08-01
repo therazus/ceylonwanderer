@@ -87,7 +87,7 @@ export function WhyUniqueSection() {
               {/* Text Content */}
               <div className="flex-1">
 
-                <h3 className="text-3xl md:text-4xl font-caveat text-primary leading-tight font-bold">
+                <h3 className="text-3xl md:text-4xl italic font-semibold text-primary leading-tight tracking-wide">
                   {feature.title}
                 </h3>
                 <p className="text-lg text-gray-600 leading-relaxed">

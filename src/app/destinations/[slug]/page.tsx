@@ -63,7 +63,7 @@ export default function DestinationPage() {
         <section className="py-16 sm:py-20 lg:py-24 bg-bg_green">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20">
-              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-serif italic font-caveat text-primary mb-4">
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl italic font-medium text-primary mb-4 tracking-wide">
                 Discover
               </h2>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-base mb-6">
@@ -87,7 +87,7 @@ export default function DestinationPage() {
         <section className="py-16 sm:py-20 lg:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20">
-              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-serif italic font-caveat text-primary mb-4">
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl italic font-medium text-primary mb-4 tracking-wide">
                 Journey
               </h2>
               <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-base mb-6">

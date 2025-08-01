@@ -36,50 +36,50 @@ export default function Navbar() {
               <div className="flex flex-col space-y-4">
                 <Link
                   href="/"
-                  className="text-lg font-medium text-base hover:text-green-900"
+                  className="text-lg font-medium text-base hover:text-primary"
                 >
                   {t("navbar.home")}
                 </Link>
                 <Link
                   href="/about"
-                  className="text-lg font-medium text-base hover:text-green-900"
+                  className="text-lg font-medium text-base hover:text-primary"
                 >
                   {t("navbar.about_us")}
                 </Link>
                 <Link
                   href="/destinations"
-                  className="text-lg font-medium text-base hover:text-green-900"
+                  className="text-lg font-medium text-base hover:text-primary"
                 >
                   {t("navbar.destinations")}
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-lg font-medium text-base hover:text-green-900"
+                  className="text-lg font-medium text-base hover:text-primary"
                 >
                   {t("navbar.contact")}
                 </Link>
                 {/* New Menu Items for Mobile */}
                 <Link
                   href="/gallery"
-                  className="text-lg font-medium text-base hover:text-green-900"
+                  className="text-lg font-medium text-base hover:text-primary"
                 >
                   {t("navbar.gallery")}
                 </Link>
                 <Link
                   href="/blog"
-                  className="text-lg font-medium text-base hover:text-green-900"
+                  className="text-lg font-medium text-base hover:text-primary"
                 >
                   {t("navbar.blog")}
                 </Link>
                 <Link
                   href="/faq"
-                  className="text-lg font-medium text-base hover:text-green-900"
+                  className="text-lg font-medium text-base hover:text-primary"
                 >
                   {t("navbar.faq")}
                 </Link>
                 <Link
                   href="/sustainability"
-                  className="text-lg font-medium text-base hover:text-green-900"
+                  className="text-lg font-medium text-base hover:text-primary"
                 >
                   {t("navbar.sustainability")}
                 </Link>
@@ -132,25 +132,25 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:items-center lg:space-x-8 text-base">
           <Link
             href="/"
-            className="text-sm font-medium text-base hover:text-green-900"
+            className="text-sm font-medium text-base hover:text-primary"
           >
             {t("navbar.home")}
           </Link>
           <Link
             href="/about"
-            className="text-sm font-medium text-base hover:text-green-900"
+            className="text-sm font-medium text-base hover:text-primary"
           >
             {t("navbar.about_us")}
           </Link>
           <Link
             href="/destinations"
-            className="text-sm font-medium text-base hover:text-green-900"
+            className="text-sm font-medium text-base hover:text-primary"
           >
             {t("navbar.destinations")}
           </Link>
           <Link
             href="/contact"
-            className="text-sm font-medium text-base hover:text-green-900"
+            className="text-sm font-medium text-base hover:text-primary"
           >
             {t("navbar.contact")}
           </Link>

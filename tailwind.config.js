@@ -10,19 +10,19 @@ module.exports = {
     extend: {
       colors: {
         base: "#1A202C",
-        primary: "#466d1d", // Primary green color
-        tan_primary: "#657a42",
-        bg_green: "#edf1e9",
-        muted_primary: "#ccd7b9",
+        primary: "#028A0F", // Primary emerald green color
+        tan_primary: "#1a6d22ff", // Updated to emerald green
+        bg_green: "#ffffff", // Changed to pure white
+        muted_primary: "#8aec94ff", // Updated to emerald green
         secondary: "#718096",
         muted: "#3d3d3d",
-        success: "#38A169",
+        success: "#3fef51ff", // Updated to match emerald green
         warning: "#D69E2E",
         error: "#E53E3E",
       },
 
       fontFamily: {
-        sans: ["Roboto", "Arial", "sans-serif"], // Replace with your desired font
+        sans: ["Brandon Grotesque", "Arial", "sans-serif"], // Brandon Grotesque primary font
       },
     },
   },

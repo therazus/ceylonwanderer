@@ -34,7 +34,7 @@ const SustainabilityActivities = () => {
           </div>
           {/* Right Content */}
           <div className="w-full md:w-1/2">
-            <h2 className="text-7xl font-serif italic  font-caveat text-muted_primary">
+            <h2 className="text-7xl italic font-medium text-muted_primary tracking-wide">
               {t("sustainability.title1")}
             </h2>
 
@@ -76,7 +76,7 @@ const SustainabilityActivities = () => {
                   {t("sustainability.education.description")}
                 </p>
                 <div className="flex justify-center">
-                  <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-green-600">
+                  <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-primary">
                     <ArrowRight className="w-5 h-5" />
                   </button>
                 </div>
@@ -104,7 +104,7 @@ const SustainabilityActivities = () => {
                   {t("sustainability.plant.description")}
                 </p>
                 <div className="flex justify-center">
-                  <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-green-600">
+                  <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-primary">
                     <ArrowRight className="w-5 h-5" />
                   </button>
                 </div>
@@ -132,7 +132,7 @@ const SustainabilityActivities = () => {
                   {t("sustainability.animal.description")}
                 </p>
                 <div className="flex justify-center">
-                  <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-green-600">
+                  <button className="w-10 h-10 rounded-full bg-primary/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all hover:bg-primary">
                     <ArrowRight className="w-5 h-5" />
                   </button>
                 </div>

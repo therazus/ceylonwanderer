@@ -77,7 +77,7 @@ export function Testimonials() {
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-caveat italic text-[#4A7B24] mb-2">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl italic font-medium text-primary mb-2 tracking-wide">
             Inspirational Stories
           </h2>
           <h3 className="text-base font-bold tracking-wider uppercase text-gray-800">

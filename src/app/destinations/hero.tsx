@@ -37,7 +37,7 @@ export default function Hero() {
         <h1 className="text-6xl font-semibold tracking-wider sm:text-2xl lg:text-8xl uppercase">
           {t("destination-page.hero.title")}
         </h1>
-        <h1 className="-mt-6 text-6xl sm:text-2xl lg:text-8xl  font-caveat text-muted_primary leading-none">
+        <h1 className="-mt-6 text-6xl sm:text-2xl lg:text-8xl italic font-medium text-muted_primary leading-none tracking-wide">
           {t("destination-page.hero.subtitle")}
         </h1>
         <p className="text-lg font-light tracking-wide sm:text-xl md:text-2xl"></p>

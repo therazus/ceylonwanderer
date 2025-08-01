@@ -23,7 +23,7 @@ export function Badge({
           // Variants
           "bg-primary/10 text-primary": variant === "primary",
           "bg-secondary/10 text-secondary": variant === "secondary",
-          "bg-green-100 text-green-800": variant === "success",
+          "bg-primary/20 text-primary": variant === "success",
           "bg-red-100 text-red-800": variant === "danger",
           "bg-yellow-100 text-yellow-800": variant === "warning",
 

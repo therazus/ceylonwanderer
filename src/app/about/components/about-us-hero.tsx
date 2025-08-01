@@ -39,7 +39,7 @@ export function AboutUsHero() {
         <h1 className="text-4xl font-semibold tracking-wider sm:text-2xl lg:text-6xl uppercase">
           {t("about.hero.title")}
         </h1>
-        <h1 className="-mt-6 text-4xl sm:text-2xl lg:text-6xl  font-caveat text-muted_primary leading-none">
+        <h1 className="-mt-6 text-4xl sm:text-2xl lg:text-6xl italic font-medium text-muted_primary leading-none tracking-wide">
           {t("about.hero.subtitle")}
         </h1>
       </div>

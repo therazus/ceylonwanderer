@@ -2,6 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Brandon Grotesque Font Faces */
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_regular_italic-BF64a625c94445e.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_light-BF64a625c93e709.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_light_italic-BF64a625c93ac64.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_medium_italic-BF64a625c928c55.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_bold_italic-BF64a625c93b0ce.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_black-BF64a625c944b08.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_black_italic-BF64a625c93406c.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_thin-BF64a625c9034b9.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Brandon Grotesque';
+  src: url('/fonts/HvDTrial_Brandon_Grotesque_thin_italic-BF64a625c918a96.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -15,15 +112,13 @@
 }
 
 html {
-  font-family: var(--font-josefin-sans), Arial, sans-serif;
+  font-family: 'Brandon Grotesque', var(--font-josefin-sans), Arial, sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-josefin-sans), Helvetica, sans-serif;
+  font-family: 'Brandon Grotesque', var(--font-josefin-sans), Helvetica, sans-serif;
 }
 
-.font-caveat {
-  font-family: var(--font-caveat), cursive;
-}
+
