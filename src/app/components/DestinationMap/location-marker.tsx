@@ -1,5 +1,5 @@
 import { cn } from "../../lib/utils";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 interface LocationMarkerProps {
