@@ -37,14 +37,14 @@ export default function Hero() {
       {/* Text Content */}
       <div className="relative flex h-full flex-col items-center justify-center px-4 pt-20 text-center text-white">
         <h1 className="text-6xl font-semibold tracking-wider sm:text-3xl md:text-4xl leading-tight">
-          {t("hero.title_line1")}
+          {t("home.hero.title_line1")}
         </h1>
         <h1 className="text-8xl italic font-medium text-muted_primary leading-none tracking-wide">
-          {t("hero.title_line2")}
+          {t("home.hero.title_line2")}
         </h1>
 
         <p className="text-lg font-light  tracking-wide sm:text-xl md:text-2xl">
-          {t("hero.description")}
+          {t("home.hero.description")}
         </p>
       </div>
     </div>

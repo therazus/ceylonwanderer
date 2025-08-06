@@ -13,37 +13,37 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative">
           <div className="bg-gray-50 p-8 rounded-2xl flex flex-col items-center text-center">
             <h2 className="text-3xl font-bold text-gray-900">
-              {t("about.title")}
+              {t("home.about.title")}
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              {t("about.description")}
+              {t("home.about.description")}
             </p>
           </div>
 
           <div className="bg-gray-50 p-8 rounded-2xl flex flex-col items-center text-center">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              {t("about.impact")}
+              {t("home.about.impact")}
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed">
-              {t("about.impact_description")}
+              {t("home.about.impact_description")}
             </p>
           </div>
         </div>
 
         <div className="mt-4 text-center">
           <Button className="bg-primary hover:bg-primary/90 text-white px-6 py-6 text-lg rounded-xl">
-            {t("about.learn_more")}
+            {t("home.about.learn_more")}
           </Button>
         </div>
 
         <div className="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           {[
-            { icon: Plane, label: t("about.icons.travel") },
-            { icon: Globe, label: t("about.icons.explore") },
-            { icon: Heart, label: t("about.icons.experience") },
-            { icon: Map, label: t("about.icons.adventure") },
-            { icon: Compass, label: t("about.icons.discover") },
-            { icon: Mountain, label: t("about.icons.nature") },
+            { icon: Plane, label: t("home.icons.travel") },
+            { icon: Globe, label: t("home.icons.explore") },
+            { icon: Heart, label: t("home.icons.experience") },
+            { icon: Map, label: t("home.icons.adventure") },
+            { icon: Compass, label: t("home.icons.discover") },
+            { icon: Mountain, label: t("home.icons.nature") },
           ].map((item, index) => (
             <div
               key={index}

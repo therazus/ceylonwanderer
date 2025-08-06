@@ -1,11 +1,32 @@
 {
-  "about": {
-    "title": "Crafting our story, one chapter at a time, since 2024",
-    "description": "Sri Lanka is a hidden treasure in the Indian Ocean, rich in its remarkable creations of mother nature and diverse cultures. We promote Sri Lanka on the global tourism platform not only as a typical beach vacation destination but also through its still undiscovered aspects such as culture, nature and wellness.",
-    "impact": "VISION",
-    "impact_description": "Our vision is to create a better Sri Lanka, and we choose to do so by embracing tourism. Sri Lanka is like our mother, and everything we offer to our customers is deeply connected to the well-being of our beloved country. When you understand this, we believe there's no room for doubt about the quality and impact of what we provide. Your experience with us is an experience that helps nurture and uplift Sri Lanka itself.",
-    "learn_more": "Learn More",
+  "home":{
+    "about":{
+      "title": "Crafting our story, one chapter at a time, since 2024",
+      "description": "Sri Lanka is a hidden treasure in the Indian Ocean, rich in its remarkable creations of mother nature and diverse cultures. We promote Sri Lanka on the global tourism platform not only as a typical beach vacation destination but also through its still undiscovered aspects such as culture, nature and wellness.",
+      "impact": "VISION",
+      "impact_description": "Our vision is to create a better Sri Lanka, and we choose to do so by embracing tourism. Sri Lanka is like our mother, and everything we offer to our customers is deeply connected to the well-being of our beloved country. When you understand this, we believe there's no room for doubt about the quality and impact of what we provide. Your experience with us is an experience that helps nurture and uplift Sri Lanka itself.",
+      "learn_more": "Learn More"
+    },
 
+    "hero": {
+    "title_line1": "Discover the untamed beauty of",
+    "title_line2": "Sri Lanka",
+    "description": "Where every moment becomes an unforgettable memory."
+  },
+
+    "icons" : {
+      "travel" : "Travel",
+      "explore" : "Explore",
+      "experience" : "Experience",
+      "adventure" : "Adventure",
+      "nature" : "Nature",
+      "discover" : "Discover"
+    }
+
+
+  },
+
+  "about": {
     "hero": {
       "title": "About Ceylon Wanderer",
       "subtitle": "Your trusted bridge between Germany and the pearl of the Indian Ocean",
@@ -43,15 +64,6 @@
       "description": "Let us create a personalized journey that connects you with the authentic heart of Sri Lanka.",
       "primary": "Plan Your Journey",
       "secondary": "Learn More"
-    },
-
-    "icons" : {
-      "travel" : "Travel",
-      "explore" : "Explore",
-      "experience" : "Experience",
-      "adventure" : "Adventure",
-      "nature" : "Nature",
-      "discover" : "Discover"
     }
   },
 
@@ -67,12 +79,6 @@
     "search": "Search...",
     "translate": "Translate",
     "menu": "MORE"
-  },
-
-  "hero": {
-    "title_line1": "Discover the untamed beauty of",
-    "title_line2": "Sri Lanka",
-    "description": "Where every moment becomes an unforgettable memory."
   },
 
   "destination": {

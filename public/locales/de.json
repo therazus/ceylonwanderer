@@ -1,11 +1,32 @@
 {
+  "home":{
+    "about":{
+      "title": "Unsere Geschichte schreiben, Kapitel für Kapitel, seit 2024",
+      "description": "Sri Lanka ist ein verborgenes Juwel im Indischen Ozean, reich an beeindruckenden Naturschätzen und einer vielfältigen Kultur. Unser Unternehmen fördert Sri Lanka auf der globalen Tourismusplattform nicht nur als typisches Strandurlaubsziel, sondern hebt auch die bisher unentdeckten Aspekte wie Kultur, Natur und Wellness hervor.",
+      "impact": "VISION",
+      "impact_description": "Unsere Vision ist es, ein besseres Sri Lanka zu schaffen, und wir wählen den Weg des Tourismus, um dies zu erreichen. Sri Lanka ist wie unsere Mutter, und alles, was wir unseren Kunden bieten, ist tief mit dem Wohl unseres geliebten Landes verbunden. Wenn man dies versteht, gibt es keinen Zweifel an der Qualität und Wirkung dessen, was wir bieten. Ihre Erfahrung mit uns ist eine Erfahrung, die Sri Lanka selbst nährt und stärkt.",
+      "learn_more": "Mehr erfahren"
+    },
+
+    "hero": {
+    "title_line1": "Entdecke die ungezähmte Schönheit von",
+    "title_line2": "Sri Lanka",
+    "description": "Wo jeder Moment zu einer unvergesslichen Erinnerung wird."
+  },
+
+    "icons" : {
+      "travel" : "Reisen",
+      "explore" : "Erkunden",
+      "experience" : "Erfahren",
+      "adventure" : "Abenteuer",
+      "nature" : "Natur",
+      "discover" : "Entdecken"
+    }
+
+
+  },
 
   "about": {
-    "title": "Unsere Geschichte schreiben, Kapitel für Kapitel, seit 2024",
-    "description": "Sri Lanka ist ein verborgenes Juwel im Indischen Ozean, reich an beeindruckenden Naturschätzen und einer vielfältigen Kultur. Unser Unternehmen fördert Sri Lanka auf der globalen Tourismusplattform nicht nur als typisches Strandurlaubsziel, sondern hebt auch die bisher unentdeckten Aspekte wie Kultur, Natur und Wellness hervor.",
-    "impact": "VISION",
-    "impact_description": "Unsere Vision ist es, ein besseres Sri Lanka zu schaffen, und wir wählen den Weg des Tourismus, um dies zu erreichen. Sri Lanka ist wie unsere Mutter, und alles, was wir unseren Kunden bieten, ist tief mit dem Wohl unseres geliebten Landes verbunden. Wenn man dies versteht, gibt es keinen Zweifel an der Qualität und Wirkung dessen, was wir bieten. Ihre Erfahrung mit uns ist eine Erfahrung, die Sri Lanka selbst nährt und stärkt.",
-    "learn_more": "Mehr erfahren",
 
     "hero": {
       "title": "Über Ceylon Wanderer",
@@ -44,15 +65,6 @@
       "description": "Lassen Sie uns eine personalisierte Reise schaffen, die Sie mit dem authentischen Herzen Sri Lankas verbindet.",
       "primary": "Ihre Reise planen",
       "secondary": "Mehr erfahren"
-    },
-
-    "icons" : {
-      "travel" : "Reisen",
-      "explore" : "Erkunden",
-      "experience" : "Erfahren",
-      "adventure" : "Abenteuer",
-      "nature" : "Natur",
-      "discover" : "Entdecken"
     }
   },
 
@@ -70,13 +82,6 @@
     "translate": "Übersetzen",
     "menu": "MEHR"
   },
-
-  "hero": {
-    "title_line1": "Entdecke die ungezähmte Schönheit",
-    "title_line2": "Sri Lanka",
-    "description": "Wo jeder Moment zu einer unvergesslichen Erinnerung wird."
-  },
-
 
   "destination": {
     "title1":"Entdecken Sie die Magischen",
