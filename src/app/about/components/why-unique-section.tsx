@@ -5,13 +5,10 @@ import { Button } from "../../components/ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { 
-  Link2, 
   Target, 
   Users, 
   Award,
-  ArrowRight,
-  Heart,
-  Globe
+  ArrowRight
 } from "lucide-react";
 
 export function WhyUniqueSection() {
