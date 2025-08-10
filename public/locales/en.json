@@ -59,11 +59,40 @@
       }
     },
 
+    "gallery": {
+      "title": "Discover Sri Lanka Through Our Lens",
+      "description": "A visual journey through the diverse landscapes and rich culture"
+    },
+
     "cta": {
       "title": "Ready to Experience Sri Lanka?",
       "description": "Let us create a personalized journey that connects you with the authentic heart of Sri Lanka.",
       "primary": "Plan Your Journey",
       "secondary": "Learn More"
+    },
+
+    "statistics": {
+      "title": "No Distance Is Too Far",
+      "continents": "7",
+      "continents_label": "Continents",
+      "countries": "102", 
+      "countries_label": "Countries",
+      "oceans": "5",
+      "oceans_label": "Oceans",
+      "cities": "1752",
+      "cities_label": "Cities"
+    },
+
+    "services": {
+      "title": "We Got You Covered",
+      "subtitle": "Our comprehensive services ensure your perfect Sri Lankan adventure"
+    },
+
+    "exclusive_offer": {
+      "title": "Exclusive Offer",
+      "subtitle": "Get 30% Off Your First Trip",
+      "description": "Book your dream Sri Lankan adventure today and save on your first journey with Ceylon Wanderer.",
+      "button": "View Packages"
     }
   },
 

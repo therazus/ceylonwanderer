@@ -60,11 +60,40 @@
       }
     },
 
+    "gallery": {
+      "title": "Entdecken Sie Sri Lanka durch unsere Linse",
+      "description": "Eine visuelle Reise durch die vielfältigen Landschaften und reiche Kultur"
+    },
+
     "cta": {
       "title": "Bereit, Sri Lanka zu erleben?",
       "description": "Lassen Sie uns eine personalisierte Reise schaffen, die Sie mit dem authentischen Herzen Sri Lankas verbindet.",
       "primary": "Ihre Reise planen",
       "secondary": "Mehr erfahren"
+    },
+
+    "statistics": {
+      "title": "Keine Entfernung Ist Zu Weit",
+      "continents": "7",
+      "continents_label": "Kontinente",
+      "countries": "102", 
+      "countries_label": "Länder",
+      "oceans": "5",
+      "oceans_label": "Ozeane",
+      "cities": "1752",
+      "cities_label": "Städte"
+    },
+
+    "services": {
+      "title": "Wir Haben Sie Abgedeckt",
+      "subtitle": "Unsere umfassenden Dienstleistungen gewährleisten Ihr perfektes Sri Lanka-Abenteuer"
+    },
+
+    "exclusive_offer": {
+      "title": "Exklusives Angebot",
+      "subtitle": "30% Rabatt auf Ihre Erste Reise",
+      "description": "Buchen Sie heute Ihr Traum-Sri-Lanka-Abenteuer und sparen Sie bei Ihrer ersten Reise mit Ceylon Wanderer.",
+      "button": "Pakete Anzeigen"
     }
   },
 

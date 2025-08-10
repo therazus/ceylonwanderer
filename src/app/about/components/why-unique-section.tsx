@@ -1,192 +1,315 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
-import { Heart, Globe, Users, Shield, Star } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { Button } from "../../components/ui/button";
 import Image from "next/image";
-
-interface UniqueFeature {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-  image: string;
-}
+import { motion } from "framer-motion";
+import { 
+  Link2, 
+  Target, 
+  Users, 
+  Award,
+  ArrowRight,
+  Heart,
+  Globe
+} from "lucide-react";
 
 export function WhyUniqueSection() {
   const { t } = useTranslation();
-  const router = useRouter();
-
-  const handlePlanJourney = () => {
-    router.push("/#sri-lanka-map");
-  };
-
-  const features: UniqueFeature[] = [
-    {
-      icon: <Globe className="w-8 h-8 text-primary" />,
-      title: t("about.unique.bridge.title"),
-      description: t("about.unique.bridge.description"),
-      image: "/about/bridge-cultures.jpg"
-    },
-    {
-      icon: <Star className="w-8 h-8 text-primary" />,
-      title: t("about.unique.authentic.title"),
-      description: t("about.unique.authentic.description"),
-      image: "/about/authentic-experience.jpg"
-    },
-    {
-      icon: <Shield className="w-8 h-8 text-primary" />,
-      title: t("about.unique.expertise.title"),
-      description: t("about.unique.expertise.description"),
-      image: "/about/local-expertise.jpg"
-    },
-    {
-      icon: <Heart className="w-8 h-8 text-primary" />,
-      title: t("about.unique.purpose.title"),
-      description: t("about.unique.purpose.description"),
-      image: "/about/purpose-driven.jpg"
-    },
-    {
-      icon: <Users className="w-8 h-8 text-primary" />,
-      title: t("about.unique.german.title"),
-      description: t("about.unique.german.description"),
-      image: "/about/german-traveler.jpg"
-    }
-  ];
 
   return (
-    <section className="relative pt-16 lg:pt-24 bg-white z-10">
-      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-20">
-        {/* Section Header */}
-        <motion.div
+    <div className="bg-white">
+      {/* Section 1: Bridge Between Two Worlds */}
+      <section className="py-16 px-4 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Text */}
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="space-y-6"
+          >
+            <div className="lg:text-left">
+      
+                  <h2 className="text-5xl font-bold bg-gradient-to-r from-primary to-muted_primary bg-clip-text text-transparent mb-6">
+                    {t("about.unique.title")}
+                  </h2>
+                  <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+            {t("about.unique.subtitle")}
+          </p>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                {t("about.unique.bridge.title")}
+              </h3>
+              <p className="text-gray-600 leading-relaxed text-lg">
+                {t("about.unique.bridge.description")}
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Right Column - Image */}
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="relative h-80 lg:h-96"
+          >
+            <Image
+              src="/about/bridge-cultures.jpg"
+              alt="Travel gear and binoculars"
+              fill
+              className="object-cover rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent rounded-2xl"></div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Section 2: Authentic and Personalized Experiences */}
+      <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-white">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto text-center"
+        >
+        
+          <h3 className="text-3xl font-bold text-gray-900 mb-6">
+            {t("about.unique.authentic.title")}
+          </h3>
+          
+          <div className="relative h-96 md:h-[500px] mb-8 rounded-2xl overflow-hidden shadow-xl">
+            <Image
+              src="/about/purpose-driven.jpg"
+              alt="Authentic experiences"
+              fill
+              className="object-cover hover:scale-110 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+          </div>
+          
+          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            {t("about.unique.authentic.description")}
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Section 3: Local Expertise, International Standards */}
+
+      
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            {/* Left: Description and Topic */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6 text-center md:text-left"
+            >
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                {t("about.unique.expertise.title")}
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                {t("about.unique.expertise.description")}
+              </p>
+            </motion.div>
+        {/* Right: Statistics Grid */}
+        <div>
+          <div className="grid grid-cols-2 gap-8">
+            {[
+          { value: t("about.statistics.continents"), label: t("about.statistics.continents_label") },
+          { value: t("about.statistics.countries"), label: t("about.statistics.countries_label") },
+          { value: t("about.statistics.oceans"), label: t("about.statistics.oceans_label") },
+          { value: t("about.statistics.cities"), label: t("about.statistics.cities_label") }
+            ].map((stat, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="text-center group p-6 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl hover:shadow-lg transition-all duration-300"
+          >
+            <div className="text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">
+              {stat.value}
+            </div>
+            <div className="text-sm font-medium text-gray-600 uppercase tracking-wide">
+              {stat.label}
+            </div>
+          </motion.div>
+            ))}
+          </div>
+        </div>
+          </div>
+        </div>
+      </section>
+      
+
+      {/* Section 4: Photo Grid */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-12"
+          >
+        <h2 className="text-3xl font-bold bg-primary bg-clip-text text-transparent mb-4">
+          {t("about.gallery.title")}
+        </h2>
+        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          {t("about.gallery.description")}
+        </p>
+          </motion.div>
+          {(() => {
+        const imageGrid = [
+          [
+            { src: "/heroimage.webp", alt: "Sri Lankan landscape", height: "h-48" },
+            { src: "/education.jpg", alt: "Cultural experience", height: "h-32" },
+          ],
+          [
+            { src: "/plant.jpg", alt: "Nature conservation", height: "h-32" },
+            { src: "/sllandscape.jpg", alt: "Mountain landscape", height: "h-48" },
+          ],
+          [
+            { src: "/districts/colombo.jpg", alt: "Sri Lankan coast", height: "h-48" },
+            { src: "/rescue.jpg", alt: "Wildlife rescue", height: "h-32" },
+          ],
+          [
+            { src: "/galle/galle3.jpg", alt: "Galle district", height: "h-32" },
+            { src: "/galle/galle2.jpg", alt: "Galle experience", height: "h-48" },
+          ],
+        ];
+        return (
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+            {imageGrid.map((col, colIdx) => (
+          <div className="space-y-2" key={colIdx}>
+            {col.map((img, rowIdx) => (
+              <motion.div
+            key={img.src}
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.1 * (colIdx * 2 + rowIdx) }}
+            className={`relative ${img.height}`}
+              >
+            <Image
+              src={img.src}
+              alt={img.alt}
+              fill
+              className="object-cover rounded-lg hover:scale-110 transition-transform duration-500"
+            />
+              </motion.div>
+            ))}
+          </div>
+            ))}
+          </div>
+        );
+          })()}
+        </div>
+      </section>
+
+      {/* Section 5: Driven by Purpose & Tailored for German Traveler */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              {t("about.services.title")}
+            </h2>
+            <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
+          </motion.div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <motion.div 
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center"
+            >
+              <div className="flex justify-center items-center mb-6">
+                <Target className="w-16 h-16 text-primary" />
+              </div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                {t("about.unique.purpose.title")}
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                {t("about.unique.purpose.description")}
+              </p>
+            </motion.div>
+            
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-center"
+            >
+              <div className="flex justify-center items-center mb-6">
+                <Users className="w-16 h-16 text-primary" />
+              </div>
+              <h3 className="text-3xl font-bold text-gray-900 mb-4">
+                {t("about.unique.german.title")}
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed">
+                {t("about.unique.german.description")}
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: Exclusive Offer */}
+      <section className="relative py-20 px-4">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/sllandscape.jpg"
+            alt="Sri Lankan sunset landscape"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50"></div>
+        </div>
+
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-32 h-32 border-2 border-white rounded-full"></div>
+          <div className="absolute bottom-10 right-10 w-24 h-24 border-2 border-white rounded-full"></div>
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 border-2 border-white rounded-full"></div>
+        </div>
+        
+        {/* Content */}
+        <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
+          className="relative max-w-4xl mx-auto text-center text-white"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6">
-            {t("about.unique.title")}
+          <div className="inline-flex items-center px-4 py-2 bg-primary/20 rounded-full mb-6 backdrop-blur-sm">
+            <Award className="w-5 h-5 mr-2" />
+            <span className="text-sm font-medium uppercase tracking-wider">
+              {t("about.exclusive_offer.title")}
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            {t("about.exclusive_offer.subtitle")}
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            {t("about.unique.subtitle")}
+          <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90">
+            {t("about.exclusive_offer.description")}
           </p>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-medium rounded-xl shadow-lg transition-all duration-300 group">
+              {t("about.exclusive_offer.button")}
+              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </motion.div>
         </motion.div>
-
-        {/* Features Grid */}
-        <div className="space-y-32">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className={`flex flex-col lg:flex-row items-center gap-16 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}
-            >
-              {/* Text Content */}
-              <div className="flex-1">
-
-                <h3 className="text-3xl md:text-4xl italic font-semibold text-primary leading-tight tracking-wide">
-                  {feature.title}
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-
-              {/* Image Content */}
-              <div className="flex-1 relative max-w-sm mx-auto">
-                <div className="relative">
-                  {/* Background geometric shape */}
-                  <div className={`absolute inset-0 w-full h-full bg-gradient-to-br ${index % 2 === 0 ? 'from-primary/20 to-tan_primary/20' : 'from-tan_primary/20 to-primary/20'} rounded-[2.5rem] transform rotate-6`}></div>
-                  
-                  {/* Image container with 1:1 aspect ratio */}
-                  <div className="relative w-full aspect-square overflow-hidden rounded-[2.5rem] transform -rotate-3 shadow-2xl">
-                    <Image 
-                      src={feature.image} 
-                      alt={feature.title}
-                      fill
-                      className="object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
-                  </div>
-
-                  {/* Decorative swirl */}
-                  <div className={`absolute ${index % 2 === 0 ? '-bottom-8 -right-8' : '-bottom-8 -left-8'} w-24 h-16 text-primary opacity-30`}>
-                    <svg viewBox="0 0 100 60" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M10 30c10-20 30-20 40 0s30 20 40 0" strokeLinecap="round"/>
-                      <path d="M15 40c10-15 25-15 35 0s25 15 35 0" strokeLinecap="round" opacity="0.6"/>
-                    </svg>
-                  </div>
-
-                  {/* Small decorative star */}
-                  <div className={`absolute ${index % 2 === 0 ? '-top-4 -left-4' : '-top-4 -right-4'} w-8 h-8 text-tan_primary`}>
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-      
-      {/* Call to Action */}
-      <div className="w-full mt-24">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          viewport={{ once: true }}
-          className="relative bg-gradient-to-b from-primary/10 to-white py-16 lg:py-24"
-        >
-          {/* Background decoration */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-tan_primary/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
-          </div>
-          
-          <div className="relative z-10 w-full px-4 sm:px-6 lg:px-8 xl:px-20">
-            <div className="text-center max-w-4xl mx-auto">
-              <motion.h2 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6"
-              >
-                {t("about.cta.title")}
-              </motion.h2>
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="text-lg sm:text-xl text-gray-600 mb-12 leading-relaxed"
-              >
-                {t("about.cta.description")}
-              </motion.p>
-              <motion.button
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                onClick={handlePlanJourney}
-                className="inline-flex items-center px-12 py-4 bg-primary text-white text-lg font-semibold rounded-full shadow-lg hover:bg-primary/90 hover:shadow-xl transition-all duration-300"
-              >
-                {t("about.cta.primary")}
-                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </motion.button>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
