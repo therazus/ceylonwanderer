@@ -66,31 +66,65 @@ export function WhyUniqueSection() {
 
       {/* Section 2: Authentic and Personalized Experiences */}
       <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-white">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto text-center"
-        >
-        
-          <h3 className="text-3xl font-bold text-gray-900 mb-6">
-            {t("about.unique.authentic.title")}
-          </h3>
-          
-          <div className="relative h-96 md:h-[500px] mb-8 rounded-2xl overflow-hidden shadow-xl">
+        <div className="max-w-7xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="relative h-[600px] md:h-[700px] rounded-3xl overflow-hidden shadow-2xl"
+          >
+            {/* Background Image */}
             <Image
               src="/about/purpose-driven.jpg"
               alt="Authentic experiences"
               fill
-              className="object-cover hover:scale-110 transition-transform duration-700"
+              className="object-cover object-bottom hover:scale-105 transition-transform duration-1000"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-          </div>
-          
-          <p className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto">
-            {t("about.unique.authentic.description")}
-          </p>
-        </motion.div>
+            
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-l from-black/80 via-black/40 to-transparent"></div>
+            
+            {/* Content Overlay */}
+            <div className="absolute inset-0 flex items-center justify-end">
+              <div className="w-full max-w-2xl px-8 md:px-16 text-white text-right">
+                <motion.div
+                  initial={{ opacity: 0, x: 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="space-y-6"
+                >
+                  {/* Title */}
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+                    {t("about.unique.authentic.title")}
+                  </h3>
+                  
+                  {/* Description */}
+                  <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200 max-w-xl ml-auto">
+                    {t("about.unique.authentic.description")}
+                  </p>
+                  
+                  {/* Green Decorative Elements */}
+                  <div className="flex justify-end items-center space-x-3 pt-4">
+                    <div className="w-16 h-1 bg-primary rounded-full"></div>
+                    <div className="w-4 h-4 bg-primary rounded-full shadow-lg"></div>
+                    <div className="w-6 h-1 bg-muted_primary rounded-full"></div>
+                  </div>
+                  
+                  {/* Additional Green Accent */}
+                  <div className="flex justify-end">
+                    <div className="w-20 h-20 border-2 border-primary/30 rounded-full flex items-center justify-center">
+                      <div className="w-12 h-12 bg-primary rounded-full opacity-80"></div>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+            
+            {/* Additional Decorative Elements */}
+            <div className="absolute top-8 right-8 w-24 h-24 border-2 border-white/20 rounded-full"></div>
+            <div className="absolute bottom-8 right-16 w-16 h-16 border-2 border-primary/30 rounded-full"></div>
+          </motion.div>
+        </div>
       </section>
 
       {/* Section 3: Local Expertise, International Standards */}
@@ -114,8 +148,8 @@ export function WhyUniqueSection() {
               </p>
             </motion.div>
         {/* Right: Statistics Grid */}
-        <div>
-          <div className="grid grid-cols-2 gap-8">
+        <div className="relative">
+          <div className="grid grid-cols-2 ">
             {[
           { value: t("about.statistics.continents"), label: t("about.statistics.continents_label") },
           { value: t("about.statistics.countries"), label: t("about.statistics.countries_label") },
@@ -127,7 +161,7 @@ export function WhyUniqueSection() {
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="text-center group p-6 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl hover:shadow-lg transition-all duration-300"
+            className="text-center group p-6 bg-primary/5  hover:shadow-lg transition-all duration-300"
           >
             <div className="text-5xl font-bold text-primary mb-2 group-hover:scale-110 transition-transform">
               {stat.value}
@@ -138,6 +172,12 @@ export function WhyUniqueSection() {
           </motion.div>
             ))}
           </div>
+          
+          {/* Horizontal dividing line */}
+          <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-primary/20 transform -translate-y-px"></div>
+          
+          {/* Vertical dividing line */}
+          <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-primary/20 transform -translate-x-px"></div>
         </div>
           </div>
         </div>
