@@ -1,0 +1,143 @@
+// This is your Prisma schema file for Ceylon Wanderer
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Main Destinations table
+model Destination {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  status    DestinationStatus @default(DRAFT)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relationships
+  content    DestinationContent[]
+  images     DestinationImage[]
+  tourPlans  TourPlan[]
+  thingsToDo ThingToDo[]
+
+  @@map("destinations")
+}
+
+// Multilingual content for destinations
+model DestinationContent {
+  id          String @id @default(cuid())
+  language    Language
+  
+  // Content fields
+  name               String
+  description        String @db.Text
+  shortDescription   String?
+  heroTitle          String?
+  heroSubtitle       String?
+  
+  // Pricing
+  flightCost         Int?
+  vacationCostAmount Int?
+  vacationCostDuration String?
+  travelTime         String?
+  
+  // SEO
+  metaTitle          String?
+  metaDescription    String?
+  
+  // Foreign key
+  destinationId String
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([destinationId, language])
+  @@map("destination_content")
+}
+
+// Images stored in Vercel Blob
+model DestinationImage {
+  id            String @id @default(cuid())
+  blobUrl       String
+  originalName  String?
+  altText       String?
+  width         Int?
+  height        Int?
+  fileSize      Int?
+  mimeType      String?
+  imageType     ImageType @default(GALLERY)
+  order         Int @default(0)
+  
+  // Foreign key
+  destinationId String
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime @default(now())
+
+  @@map("destination_images")
+}
+
+// Tour plan items (multilingual)
+model TourPlan {
+  id          String @id @default(cuid())
+  language    Language
+  key         String // unique identifier for matching across languages
+  title       String
+  description String @db.Text
+  order       Int @default(0)
+  
+  // Foreign key
+  destinationId String
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([destinationId, language, key])
+  @@map("tour_plans")
+}
+
+// Things to do (multilingual)
+model ThingToDo {
+  id          String @id @default(cuid())
+  language    Language
+  name        String
+  description String @db.Text
+  imageUrl    String? // Vercel Blob URL
+  icon        String?
+  distance    String?
+  order       Int @default(0)
+  
+  // Foreign key
+  destinationId String
+  destination   Destination @relation(fields: [destinationId], references: [id], onDelete: Cascade)
+  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("things_to_do")
+}
+
+// Enums
+enum Language {
+  EN
+  DE
+}
+
+enum DestinationStatus {
+  DRAFT
+  PUBLISHED
+  ARCHIVED
+}
+
+enum ImageType {
+  HERO
+  GALLERY
+  THUMBNAIL
+  THINGS_TO_DO
+}

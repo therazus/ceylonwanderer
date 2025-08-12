@@ -59,6 +59,40 @@ export default function DestinationPage() {
           </div>
         </Carousel>
 
+        {/* Tour Plan Section */}
+        <section className="py-16 sm:py-20 lg:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20">
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl italic font-medium text-primary mb-4 tracking-wide">
+                Journey
+              </h2>
+              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-base mb-6">
+                Through Time
+              </h3>
+              <p className="text-secondary text-base sm:text-lg lg:text-xl">
+                Follow our expertly crafted itinerary designed to showcase the
+                best of {destination.name}. Each day brings new adventures and
+                discoveries.
+              </p>
+            </div>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {destination.tourPlan.map((plan) => (
+                <div
+                  key={plan.key}
+                  className="rounded-lg border border-muted_primary bg-white p-6 sm:p-8 lg:p-10 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <h3 className="mb-3 text-xl sm:text-2xl lg:text-3xl font-bold text-base">
+                    {plan.title}
+                  </h3>
+                  <p className="text-secondary text-base sm:text-lg leading-relaxed">
+                    {plan.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Things To Do Section */}
         <section className="py-16 sm:py-20 lg:py-24 bg-bg_green">
           <div className="container mx-auto px-4">
@@ -83,42 +117,7 @@ export default function DestinationPage() {
           </div>
         </section>
 
-        {/* Tour Plan Section */}
-        <section className="py-16 sm:py-20 lg:py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16 lg:mb-20">
-              <h2 className="text-5xl sm:text-6xl lg:text-7xl italic font-medium text-primary mb-4 tracking-wide">
-                Journey
-              </h2>
-              <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold uppercase text-base mb-6">
-                Through Time
-              </h3>
-              <p className="text-secondary text-base sm:text-lg lg:text-xl">
-                Follow our expertly crafted itinerary designed to showcase the
-                best of {destination.name}. Each day brings new adventures and
-                discoveries.
-              </p>
-            </div>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {destination.tourPlan.map((plan) => (
-                <div
-                  key={plan.day}
-                  className="rounded-lg border border-muted_primary bg-white p-6 sm:p-8 lg:p-10 shadow-sm transition-all hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div className="mb-4 inline-block rounded-full bg-primary px-4 py-1.5 text-sm font-medium text-white">
-                    Day {plan.day}
-                  </div>
-                  <h3 className="mb-3 text-xl sm:text-2xl lg:text-3xl font-bold text-base">
-                    {plan.title}
-                  </h3>
-                  <p className="text-secondary text-base sm:text-lg leading-relaxed">
-                    {plan.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        
       </main>
       <Footer />
     </div>

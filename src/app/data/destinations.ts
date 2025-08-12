@@ -37,19 +37,19 @@ export const destinations = [
       ],
       tourPlan: [
         {
-          day: 1,
+          key: "historic-fort-exploration",
           title: "Historic Fort Exploration",
           description:
             "Begin your journey through time with a guided walk along the historic ramparts, visiting colonial buildings and learning about the fort's rich history.",
         },
         {
-          day: 2,
+          key: "coastal-paradise",
           title: "Coastal Paradise",
           description:
             "Discover the pristine beaches of Unawatuna and Jungle Beach, perfect for swimming, snorkeling, and soaking in the tropical atmosphere.",
         },
         {
-          day: 3,
+          key: "cultural-immersion",
           title: "Cultural Immersion",
           description:
             "Explore the Maritime Museum, local art galleries, and craft shops while experiencing the unique blend of Dutch-colonial and Sri Lankan culture.",
