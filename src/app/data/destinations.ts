@@ -1,3 +1,8 @@
+// DEPRECATED: This file is no longer used in the application
+// Data has been migrated to PostgreSQL database
+// Keeping as reference for adding new destinations
+// TODO: Can be removed once admin panel is implemented
+
 export const destinations = [
     {
       slug: "galle",

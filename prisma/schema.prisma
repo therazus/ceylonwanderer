@@ -10,6 +10,20 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// Admin Users table
+model AdminUser {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String   // hashed password
+  name      String
+  role      AdminRole @default(ADMIN)
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("admin_users")
+}
+
 // Main Destinations table
 model Destination {
   id        String   @id @default(cuid())
@@ -140,4 +154,10 @@ enum ImageType {
   GALLERY
   THUMBNAIL
   THINGS_TO_DO
+}
+
+enum AdminRole {
+  ADMIN
+  EDITOR
+  VIEWER
 }
